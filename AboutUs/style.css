@@ -1,0 +1,42 @@
+.contactUs-wrapper{
+    background-color: #F7F6F2;
+}
+.contactUs-wrapper nav{
+    background-image: linear-gradient(to bottom, #232526, #434343, #414345);
+    width: 90%;
+    border-radius: 2px;
+}
+.nav-logo{
+    position: absolute;
+    left: 30%;
+    height: 80px;
+}
+.contactUs-wrapper .nav-items{
+    color: white;
+    list-style: none;
+}
+.contactUs-wrapper .nav-items li{
+    margin: 25px 40px;
+}
+.contactUs-wrapper .cards-collection{
+    position: relative;
+    left: 80px;
+    height: 400px;
+    width: 90%;
+    background-image: url('/ContactUs/login-bg.jpg');
+}
+.contactUs-wrapper .card{
+    height: 380px;
+    width: 380px;
+    position: relative;
+    top:40%;
+    box-shadow: 5px 10px 30px lightgrey;
+}
+.contactUs-wrapper .aboutUs{
+    position: absolute;
+    left: 80px;
+    top: 700px;
+    width: 90%;
+    height: 400px;
+    padding: 15px;
+}

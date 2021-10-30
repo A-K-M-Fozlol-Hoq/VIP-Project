@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+.feed-wrapper .card{
+    background-color: rgba(252, 252, 252, 0.747);
+}
+.feed-wrapper .promotion{
+    height: 350px;
+    background-image: linear-gradient(to right, #1f4037, #99f2c8);
+}
+.feed-wrapper .container{
+    width: 90%;
+}
+.feed-wrapper .post-button{
+    height: 80px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+.feed-wrapper .post-button:hover{
+    background-color: rgb(176, 231, 184);
+    color: rgb(59, 139, 59);
+}
+.feed-wrapper footer{
+    height: 250px;
+    background-color: darkslategray;
+}
