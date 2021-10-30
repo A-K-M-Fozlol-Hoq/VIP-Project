@@ -1,0 +1,102 @@
+body{
+  background-color: #F8F9FA;
+}
+/* <!-- GoToNavbarSection -->
+<!-- GoToSliderSection -->
+<!-- GoToLoginRedirectSection -->
+<!-- GoToPricingSection -->
+<!-- GoToContactFormSection -->
+<!-- GoToFooterSection --> */
+/* <!-- GoToSliderSection --> */
+.home-slider-wrapper img {
+  height: 600px;
+}
+.home-slider-wrapper .carousel-caption {
+  margin-bottom: 200px;
+  /* background-color: rgb(0,0,255,0.18); */
+  background-color: rgb(0, 0, 255, 0.5);
+  border-radius: 20px;
+}
+.home-slider-wrapper .slide-header {
+  margin-bottom: 60px;
+  font-size: 3rem;
+  color: #f8f9fa;
+  /* color:blue ; */
+  /* color:#5b9bd5 ; */
+}
+.home-slider-wrapper .slide-text {
+  /* color: 	#333f50; */
+  color: white;
+  font-size: 1.5rem;
+}
+
+/* <!-- GoToLoginRedirectSection --> */
+.home-login-redirect-wrapper  {
+  width: 85%;
+  margin: auto;
+}
+.home-login-redirect-wrapper  img{
+    border-radius:5%;
+    height: 350px;
+    width: 500px; 
+}
+.home-login-redirect-wrapper p{
+    font-size:20px;
+}
+
+/* <!-- GoToPricingSection --> */
+.home-pricing-table-wrapper {
+    /* background: rgba(74, 136, 199, 0.1); */
+    padding-top:50px;
+    padding-bottom:100px;
+}
+.home-pricing-table-wrapper .pricing-table {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+.home-pricing-table-wrapper p{
+    margin-bottom:50px;
+}
+/* <!-- GoToContactFormSection --> */
+.home-contact-form-wrapper{
+    background: #fff;
+    margin: 5% auto 10%;
+    width: 70%;
+}
+.home-contact-form-wrapper .form-control{
+    border-radius:1rem;
+}
+.home-contact-form-wrapper .contact-image{
+    text-align: center;
+}
+.home-contact-form-wrapper .contact-image img{
+    border-radius: 6rem;
+    width: 11%;
+    margin-top: -3%;
+    transform: rotate(29deg);
+}
+.home-contact-form-wrapper .contact-form form{
+    padding: 14%;
+}
+.contact-form-wrapper .contact-form form .row{
+    margin-bottom: -7%;
+}
+.home-contact-form-wrapper .btnContactSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    color: #fff;
+    background-color: #0062cc;
+    border: none;
+    cursor: pointer;
+}
+
+/* <!-- GoToFooterSection --> */
+.home-footer-wrapper{
+    background-color: rgb(0, 0, 255, 0.5);
+    color: black;
+}
