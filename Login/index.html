@@ -1,0 +1,79 @@
+<!-- wholeLoginPage -->
+<!-- leftPart -->
+<!-- loginForm -->
+<!-- rightPart -->
+<!-- signupForm -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" />
+  <title>Login</title>
+</head>
+
+<body class="login-page-wrapper">
+  <!-- wholeLoginPage -->
+  <section class="whole-page">
+    <!-- leftPart -->
+    <div class="left-part">
+      <div class="px-5 pb-1 mt-5">
+        <h3 class="text-secondary mx-2">Welcome Back!</h3>
+        <p class="text-secondary mx-2">Login to your account</p>
+      </div>
+      <div class="login-form">
+        <!-- loginForm -->
+        <form action="">
+          <input type="email" class="form-control" placeholder="Email" aria-label="Username"
+            aria-describedby="basic-addon1" required>
+          <input type="password" class="form-control" placeholder="Password" aria-label="Username"
+            aria-describedby="basic-addon1" required>
+          <button type="submit" class="btn btn-secondary other-button">Login</button>
+          <div class="d-flex justify-content-around">
+            <p class="text-center"><em><a href="" class="text-secondary text-decoration-none">forgot password?</a></em>
+            </p>
+            <a href="" class="text-secondary text-decoration-none">Create account</a>
+          </div>
+        </form>
+        <p class="text-secondary text-center">or</p>
+        <button type="button" class="btn btn-primary other-button"><i class="fab fa-facebook"></i> Login with
+          Facebook</button>
+        <button type="button" class="btn btn-danger other-button"><i class="fab fa-google"></i> Login with
+          Google</button>
+      </div>
+    </div>
+    <!-- rightPart -->
+    <div class="right-part">
+      <div class="signup-form">
+        <div class="px-5 pb-1 mt-5">
+          <h3 class="text-secondary mx-2">Create your account</h3>
+          <p class="text-secondary mx-2">It is simple and, free!</p>
+        </div>
+        <!-- signupForm -->
+        <form action="">
+          <input type="text" class="form-control" placeholder="First Name" aria-describedby="basic-addon1" required>
+          <input type="text" class="form-control" placeholder="Last Name" aria-describedby="basic-addon1">
+          <input type="email" class="form-control" placeholder="Email" aria-describedby="basic-addon1" required>
+          <input type="password" class="form-control" placeholder="Password" aria-describedby="basic-addon1" required>
+          <input type="password" class="form-control" placeholder="Confirm Password" aria-describedby="basic-addon1"
+            required>
+          <button type="submit" class="btn btn-secondary other-button">Proceed</button>
+        </form>
+      </div>
+      <div class="photo-credit">
+        <p class="text-secondary"><em><a target="_blank"
+              href="https://unsplash.com/photos/q--99IzY8Lw">Lea L</a> on <a target="_blank"
+              href="https://unsplash.com/wallpapers/art?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+          </em></p>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
