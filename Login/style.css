@@ -34,9 +34,12 @@ body{
 }
 .login-page-wrapper .right-part{
     width: 50%;
-    background-image: url('loginBG\ \(2\).jpg');
     background-size: cover;
     background-position: center;
+}
+.login-page-wrapper .login-cover-image{
+    height: 700px;
+    width: 100%;
 }
 .login-page-wrapper .photo-credit{
     position: absolute;
@@ -45,7 +48,7 @@ body{
 }
 .login-page-wrapper .signup-form{
     margin: 5% auto;
-    /* display: none; */
+    display: none;
 }
 .login-page-wrapper .photo-credit a{
     text-decoration: none;
