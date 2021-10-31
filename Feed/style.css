@@ -4,9 +4,21 @@ body{
 .feed-wrapper .card{
     background-color: rgba(252, 252, 252, 0.747);
 }
+.feed-wrapper .sidebar{
+    height: 100%;
+    background: rgb(240, 240, 240);
+    border: 1px solid;
+    position
+    width: 200px;
+    margin: 0px;
+}
 .feed-wrapper .promotion{
-    height: 350px;
+    width: 68%;
+    height: 250px;
     background-image: linear-gradient(to right, #1f4037, #99f2c8);
+}
+.feed-wrapper .promotion a{
+    color: rgb(73, 73, 73);
 }
 .feed-wrapper .container{
     width: 90%;
@@ -20,6 +32,18 @@ body{
 .feed-wrapper .post-button:hover{
     background-color: rgb(176, 231, 184);
     color: rgb(59, 139, 59);
+}
+.feed-wrapper .card-buttons a{
+    color: rgb(61, 61, 61);
+    opacity: 50%;
+}
+.feed-wrapper .card-buttons a:hover{
+    color: rgb(54, 54, 54);
+    opacity: 75%;
+}
+.feed-wrapper .card-buttons a:visited{
+    color: rgb(6, 128, 209);
+    opacity: 100%;
 }
 .feed-wrapper footer{
     height: 250px;

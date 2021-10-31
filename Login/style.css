@@ -38,16 +38,12 @@ body{
     background-size: cover;
     background-position: center;
 }
-.login-page-wrapper .login-cover-image{
-    height: 700px;
-    width: 100%;
-}
 .login-page-wrapper .photo-credit{
     position: absolute;
     bottom: 0%;
     right: 1%;
 }
-.login-page-wrapper .signup-form{
+.login-page-wrapper #login-signup-form{
     margin: 5% auto;
     display: none;
 }
