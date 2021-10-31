@@ -8,4 +8,5 @@ loginCreateAccount.addEventListener('click', (event) => {
     loginLeftPart.style.visibility = 'hidden'
     // loginLeftPart.style.display = 'none'
     loginSignupForm.style.display = 'block'
+    // loginSignupForm.style.marginRight = '300px'
 })
