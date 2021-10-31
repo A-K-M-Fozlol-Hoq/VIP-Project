@@ -23,11 +23,11 @@
   <section class="whole-page">
     <!-- leftPart -->
     <div class="left-part" id="login-left-part">
-      <div class="px-5 pb-1 mt-5">
-        <h3 class="text-secondary mx-2">Welcome Back!</h3>
-        <p class="text-secondary mx-2">Login to your account</p>
-      </div>
-      <div class="login-form">
+      <div class="login-form" id="login-form">
+        <div class="px-5 pb-1 mt-5">
+          <h3 class="text-secondary mx-2">Welcome Back!</h3>
+          <p class="text-secondary mx-2">Login to your account</p>
+        </div>
         <!-- loginForm -->
         <form action="">
           <input type="email" class="form-control" placeholder="Email" aria-label="Username"
@@ -62,14 +62,18 @@
           <input type="password" class="form-control" placeholder="Confirm Password" aria-describedby="basic-addon1"
             required>
           <button type="submit" class="btn btn-secondary other-button">Proceed</button>
+          <p class="text-secondary text-center">or</p>
+          <div class="d-flex justify-content-center">
+            <a href="" id="login-instead" class="text-secondary text-decoration-none text-center">Login to you account</a>
+          </div>
         </form>
       </div>
-      <div class="photo-credit">
+      <!-- <div class="photo-credit">
         <p class="text-secondary"><em><a target="_blank"
               href="https://unsplash.com/photos/q--99IzY8Lw">Lea L</a> on <a target="_blank"
               href="https://unsplash.com/wallpapers/art?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
           </em></p>
-      </div>
+      </div> -->
     </div>
   </section>
   <script src="./loginScript.js"></script>
