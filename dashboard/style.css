@@ -35,11 +35,11 @@
 }
 .feed-main-content-wrapper .item:hover{
   /* background-color: #521A39; */
-  background-color: #7F7FFF;
+  background-color: #F8F9FA;
   color: blue;
   transform: rotate(360deg);
   /* transition-timing-function: ease-in-out; */
-  transition-duration: 1s;
+  transition-duration: 0.38s;
 }
 .feed-main-content-wrapper .item .sidebar-icon{
   margin: 4px 0 3px 300px;
@@ -68,7 +68,7 @@
   cursor: pointer;
 }
 .feed-main-content-wrapper .summary div:hover{
-  transform: rotate(360deg);
+  transform: scale(1.05);
   /* transition-timing-function: ease-in-out; */
   transition-duration: 1s;
 }
