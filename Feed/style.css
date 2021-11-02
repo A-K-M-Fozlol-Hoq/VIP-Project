@@ -1,51 +1,130 @@
-body{
-    background-color: rgb(255, 255, 255);
+/* sidebar */
+/* posts */
+/* promotion */
+/* mobileNavbar */
+/* mobileTopBar */
+body {
+  background-color: rgba(238, 238, 238, 0.815);
 }
-.feed-wrapper .card{
-    background-color: rgba(252, 252, 252, 0.747);
+.feed-wrapper #navbar {
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+  box-shadow: 2px 5px 15px rgba(173, 173, 173, 0.233);
 }
-.feed-wrapper .sidebar{
-    height: 100%;
-    background: rgb(240, 240, 240);
-    border: 1px solid;
-    /* position */
-    width: 200px;
-    margin: 0px;
+
+.feed-wrapper .mobile-navbar {
+  display: none;
+  position: sticky;
+  bottom: 0px;
+  z-index: 2;
+  box-shadow: 2px 5px 15px rgba(173, 173, 173, 0.233);
+  display: none;
 }
-.feed-wrapper .promotion{
-    width: 68%;
-    height: 250px;
-    background-image: linear-gradient(to right, #1f4037, #99f2c8);
+
+.feed-wrapper .mobile-top-bar {
+  background-color: rgba(235, 241, 245, 0.932);
+  position: fixed;
+  top: 0px;
+  height: 65px;
+  width: 100%;
+  display: none;
 }
-.feed-wrapper .promotion a{
-    color: rgb(73, 73, 73);
+
+/* sidebar */
+.feed-wrapper .side-menu {
+  position: fixed;
+  background-color: rgb(0, 0, 255, 0.6);
+  color: white;
+  width: 13%;
+  height: 100%;
 }
-.feed-wrapper .container{
-    width: 90%;
+@media screen and (max-width: 500px) {
+  .feed-wrapper .side-menu {
+    display: none;
+  }
+  .feed-wrapper #navbar {
+    display: none;
+  }
+  .feed-wrapper .mobile-navbar {
+    display: block;
+  }
+  .feed-wrapper .mobile-top-bar{
+    display: block;
+  }
 }
-.feed-wrapper .post-button{
-    height: 80px;
-    width: 200px;
-    border-radius: 10px;
-    background-color: rgb(255, 255, 255);
+.feed-wrapper .profile img {
+  height: 100px;
+  width: 100px;
+  margin-left: 75px;
+  margin-top: 20px;
 }
-.feed-wrapper .post-button:hover{
-    background-color: rgb(176, 231, 184);
-    color: rgb(59, 139, 59);
+.feed-wrapper .profile p {
+  margin-left: 75px;
+  margin-bottom: 50px;
 }
-.feed-wrapper .card-buttons a{
-    color: rgb(61, 61, 61);
-    opacity: 50%;
+.feed-wrapper .item {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  grid-gap: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 8px 0;
+  margin-bottom: 2px;
 }
-.feed-wrapper .card-buttons a:hover{
-    color: rgb(54, 54, 54);
-    opacity: 75%;
+.feed-wrapper .item:hover {
+  /* background-color: #521A39; */
+  background-color: #f8f9fa;
+  color: blue;
+  transform: rotate(360deg);
+  /* transition-timing-function: ease-in-out; */
+  transition-duration: 0.38s;
 }
-.feed-wrapper .card-buttons a:visited{
-    color: rgb(6, 128, 209);
-    opacity: 100%;
+.feed-wrapper .item .sidebar-icon {
+  margin: 4px 0 3px 300px;
 }
-.feed-wrapper footer{
-    height: 250px;
-    background-color: darkslategray;
+.feed-wrapper .item p {
+  margin: 3px 0 0 -10px;
+  font-size: 16px;
+}
+/* posts */
+.feed-wrapper .posts {
+  position: relative;
+  left: 13%;
+  width: 86.3%;
+}
+/* promotion */
+.feed-wrapper .promotion {
+  background-image: linear-gradient(to right, #003973, #e5e5be);
+  color: white;
+  width: auto;
+  height: 280px;
+  position: relative;
+  left: 13%;
+  width: 86.3%;
+}
+.feed-wrapper .pro-buttons {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  border-radius: 8px;
+  padding: 30px 65px;
+  margin-left: 10px;
+  background-color: rgba(20, 135, 230, 0.911);
+  transition: 0.19s;
+}
+.feed-wrapper .pro-buttons:hover {
+  background-color: rgba(237, 238, 230, 0.938);
+  color: rgb(18, 18, 36);
+  border: 1px solid rgb(30, 151, 231);
+  transform: scale(1.16);
+}
+
+/* post cards */
+.feed-wrapper .card {
+  border-radius: 10px;
+}
+.feed-wrapper .card:hover {
+  box-shadow: 2px 5px 15px 8px rgba(230, 228, 228, 0.788);
+  border: none;
 }
