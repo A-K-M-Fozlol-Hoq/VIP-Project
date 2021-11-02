@@ -1,7 +1,8 @@
 <!-- navBar -->
-<!-- itemList -->
+<!-- posts -->
 <!-- promotion -->
 <!-- sidebar -->
+<!-- parentOfSidebarAndPosts -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,7 +11,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css" />
@@ -19,457 +20,724 @@
 
 <body class="feed-wrapper">
   <!-- navBar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="feed-Navbar-wrapper bg-light" id="navbar">
+    <div class="navbar-section" style="width: 90%; margin:auto">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img style="width: 50px" src="../assets//images//logo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Profile</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <button class="btn btn-outline-success" type="submit">Login</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <!-- sidebar -->
+  <div class="side-menu">
+    <div class="profile">
+      <img src="../assets/images/logo.png" alt="">
+      <p class="text-info">user name</p>
+    </div>
+    <div class="sidebar-wrapper">
+      <div class='item'>
+        <div class="sidebar-icon" style='margin-left: 30px;'>
+          <i class="fas fa-border-all"></i>
+        </div>
+        <p>Summary</p>
+      </div>
+      <div class='item'>
+        <div class="sidebar-icon" style='margin-left: 30px;'>
+          <i class="fas fa-plus-square"></i>
+        </div>
+        <p>Create a Post</p>
+      </div>
+      <div class='item'>
+        <div class="sidebar-icon" style='margin-left: 30px;'>
+          <i class="fas fa-pen-alt"></i>
+        </div>
+        <p>Write a blog</p>
+      </div>
+      <div class='item'>
+        <div class="sidebar-icon" style='margin-left: 30px;'>
+          <i class="fab fa-buffer"></i>
+        </div>
+        <p>Create an offer</p>
+      </div>
+      <div class='item'>
+        <div class="sidebar-icon" style='margin-left: 30px;'>
+          <i class="fas fa-user-md"></i>
+        </div>
+        <p>Jobs</p>
+      </div>
+      <div class='item'>
+        <div class="sidebar-icon" style='margin-left: 30px;'>
+          <i class="fas fa-angle-double-right"></i>
+        </div>
+        <p>More...</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- <div class="d-grid post-container"> -->
+  <!-- promotion -->
+  <div class="promotion d-none d-md-flex align-items-center justify-content-evenly">
+    <div class="d-block">
+      <h1 style="font-size: 3.4rem;">Explore</h1>
+      <h1 style="font-size: 3.4rem;">Find</h1>
+      <h1 style="font-size: 3.4rem;">Get Involved</h1>
+    </div>
+    <div class="d-flex justify-content-center">
+      <a href="" class="pro-buttons">Hire</a>
+      <a href="" class="pro-buttons">Offer</a>
+      <a href="" class="pro-buttons">Suggest</a>
+    </div>
+  </div>
+
+  <!-- posts -->
+  <div class="posts p-3">
+    <div class="row">
+      <div class="col-md-3">
+        <!-- the actual card begins -->
+        <div class="card text-start mb-1 mb-sm-5">
+          <div class="card-header bg-white">
+            <a href="" style="text-decoration: none; color: black;">
+              <h5 class="card-title fw-normal">A cryptocurrency landing page</h5>
+            </a>
+          </div>
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <div class="d-block">
+                <h6>$300</h6>
+                <p class="text-secondary">fixed price</p>
+              </div>
+              <div class="d-block">
+                <h6>2 weeks</h6>
+                <p class="text-secondary">duration</p>
+              </div>
+              <div class="d-block">
+                <h6>Intermediate</h6>
+                <p class="text-secondary">experience level</p>
+              </div>
+            </div>
+            <p class="card-text" style="text-overflow: ellipsis; overflow: hidden;">A brief description of the
+              project, mentioning few requirements</p><br>
+            <div class="d-flex justify-content-md-start">
+              <a href="" class="mx-1" style="text-decoration: none;"><span class="badge rounded-pill text-dark"
+                  style="background-color: rgb(210, 219, 209);">HTML</span></a>
+              <a href="" class="mx-1" style="text-decoration: none;"><span class="badge rounded-pill text-dark"
+                  style="background-color: rgb(210, 219, 209);">CSS</span></a>
+              <a href="" class="mx-1" style="text-decoration: none;"><span class="badge rounded-pill text-dark"
+                  style="background-color: rgb(210, 219, 209);">Bootstrap</span></a>
+              <a href="" class="mx-1" style="text-decoration: none;"><span class="badge rounded-pill text-dark"
+                  style="background-color: rgb(210, 219, 209);">JS</span></a>
+              <a href="" class="mx-1" style="text-decoration: none;"><span class="badge rounded-pill text-dark"
+                  style="background-color: rgb(210, 219, 209);">SEO</span></a>
+            </div>
+          </div>
+          <div class="card-footer d-flex justify-content-between">
+            <div class="d-flex align-items-center">
+              <div class="d-flex justify-content-center align-items-center"
+                style="height: 32px;width: 32px;border-radius: 10px;background-color: rgba(76, 230, 145, 0.925);">
+                <i class="fas fa-address-card" style="font-size: 18px;"></i>
+              </div>
+              <a href="" class="mx-2 text-secondary text-decoration-none">
+                <p>The XYZ company</p>
+              </a>
+            </div>
+            <p class="text-muted">2 days ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <!-- the actual card begins -->
+        <div class="card text-start mb-1 mb-sm-5 ">
+          <div class="card-header bg-white">
+            <a href="" style="text-decoration: none; color: black;">
+              <h5 class="card-title fw-normal">Social Media Marketing assistant</h5>
+            </a>
+          </div>
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <div class="d-block">
+                <h6>$50</h6>
+                <p class="text-secondary">negotiable</p>
+              </div>
+              <div class="d-block">
+                <h6>2 months</h6>
+                <p class="text-secondary">duration</p>
+              </div>
+              <div class="d-block">
+                <h6>Beginner</h6>
+                <p class="text-secondary">experience level</p>
+              </div>
+            </div>
+            <p class="card-text" style="text-overflow: ellipsis; overflow: hidden;">A brief description of the
+              project, mentioning few requirements</p><br>
+            <div class="d-flex justify-content-md-start">
+              <a href="" class="mx-1" style="text-decoration: none;"><span class="badge rounded-pill text-dark"
+                  style="background-color: rgb(210, 219, 209);">content writing</span></a>
+              <a href="" class="mx-1" style="text-decoration: none;"><span class="badge rounded-pill text-dark"
+                  style="background-color: rgb(210, 219, 209);">customer support</span></a>
+            </div>
+          </div>
+          <div class="card-footer d-flex justify-content-between">
+            <div class="d-flex align-items-center">
+              <div class="d-flex justify-content-center align-items-center"
+                style="height: 32px;width: 32px;border-radius: 10px;background-color: rgba(216, 150, 97, 0.925);">
+                <i class="fas fa-address-card" style="font-size: 18px;"></i>
+              </div>
+              <a href="" class="mx-2 text-secondary text-decoration-none">
+                <p>The Seattle company</p>
+              </a>
+            </div>
+            <p class="text-muted">2 days ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <!-- the actual card begins -->
+        <div class="card text-start mb-1 mb-sm-5 ">
+          <div class="card-header bg-white">
+            <a href="" style="text-decoration: none; color: black;">
+              <h5 class="card-title fw-normal">Chemist needed for formulating cosmetics</h5>
+            </a>
+          </div>
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <div class="d-block">
+                <h6>$800</h6>
+                <p class="text-secondary">fixed price</p>
+              </div>
+              <div class="d-block">
+                <h6>6 months</h6>
+                <p class="text-secondary">duration</p>
+              </div>
+              <div class="d-block">
+                <h6>Intermediate</h6>
+                <p class="text-secondary">experience level</p>
+              </div>
+            </div>
+            <p class="card-text" style="text-overflow: ellipsis; overflow: hidden;">A brief description of the
+              project, mentioning few requirements</p><br>
+            <div class="d-flex justify-content-md-start">
+              <a href="" class="mx-1" style="text-decoration: none;"><span class="badge rounded-pill text-dark"
+                  style="background-color: rgb(210, 219, 209);">product formulation</span></a>
+              <a href="" class="mx-1" style="text-decoration: none;"><span class="badge rounded-pill text-dark"
+                  style="background-color: rgb(210, 219, 209);">cosmetics</span></a>
+            </div>
+          </div>
+          <div class="card-footer d-flex justify-content-between">
+            <div class="d-flex align-items-center">
+              <div class="d-flex justify-content-center align-items-center"
+                style="height: 32px;width: 32px;border-radius: 10px;background-color: rgba(228, 207, 92, 0.925);">
+                <i class="fas fa-address-card" style="font-size: 18px;"></i>
+              </div>
+              <a href="" class="mx-2 text-secondary text-decoration-none">
+                <p>Alchemy</p>
+              </a>
+            </div>
+            <p class="text-muted">3 days ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <!-- the actual card begins -->
+        <div class="card text-start mb-1 mb-sm-5 ">
+          <div class="card-header bg-white">
+            <a href="" style="text-decoration: none; color: black;">
+              <h5 class="card-title fw-normal">Senior iOS engineer</h5>
+            </a>
+          </div>
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <div class="d-block">
+                <h6>$2000</h6>
+                <p class="text-secondary">fixed price</p>
+              </div>
+              <div class="d-block">
+                <h6>1 month</h6>
+                <p class="text-secondary">duration</p>
+              </div>
+              <div class="d-block">
+                <h6>Expert</h6>
+                <p class="text-secondary">experience level</p>
+              </div>
+            </div>
+            <p class="card-text" style="text-overflow: ellipsis; overflow: hidden;">A brief description of the
+              project, mentioning few requirements</p><br>
+            <div class="d-flex justify-content-md-start">
+              <a href="" class="mx-1" style="text-decoration: none;"><span class="badge rounded-pill text-dark"
+                  style="background-color: rgb(210, 219, 209);">xcode</span></a>
+              <a href="" class="mx-1" style="text-decoration: none;"><span class="badge rounded-pill text-dark"
+                  style="background-color: rgb(210, 219, 209);">swift</span></a>
+              <a href="" class="mx-1" style="text-decoration: none;"><span class="badge rounded-pill text-dark"
+                  style="background-color: rgb(210, 219, 209);">api</span></a>
+            </div>
+          </div>
+          <div class="card-footer d-flex justify-content-between">
+            <div class="d-flex align-items-center">
+              <div class="d-flex justify-content-center align-items-center"
+                style="height: 32px;width: 32px;border-radius: 10px;background-color: rgba(228, 207, 92, 0.925);">
+                <i class="fas fa-address-card" style="font-size: 18px;"></i>
+              </div>
+              <a href="" class="mx-2 text-secondary text-decoration-none">
+                <p>The XYZ company</p>
+              </a>
+            </div>
+            <p class="text-muted">8 days ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- another row -->
+    <div class="row">
+      <div class="col-md-3">
+        <!-- the actual card begins -->
+        <div class="card text-start mb-1 mb-sm-5 ">
+          <div class="card-header bg-white">
+            <a href="" style="text-decoration: none; color: black;">
+              <h5 class="card-title fw-normal">Create renderman shader for Maya</h5>
+            </a>
+          </div>
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <div class="d-block">
+                <h6>$300</h6>
+                <p class="text-secondary">fixed price</p>
+              </div>
+              <div class="d-block">
+                <h6>2 weeks</h6>
+                <p class="text-secondary">duration</p>
+              </div>
+              <div class="d-block">
+                <h6>Intermediate</h6>
+                <p class="text-secondary">experience level</p>
+              </div>
+            </div>
+            <p class="card-text" style="text-overflow: ellipsis; overflow: hidden;">A brief description of the
+              project, mentioning few requirements</p><br>
+            <div class="d-flex justify-content-md-start">
+              <a href="" class="mx-1" style="text-decoration: none;"><span class="badge rounded-pill text-dark"
+                  style="background-color: rgb(210, 219, 209);">autodesk maya</span></a>
+            </div>
+          </div>
+          <div class="card-footer d-flex justify-content-between">
+            <div class="d-flex align-items-center">
+              <div class="d-flex justify-content-center align-items-center"
+                style="height: 32px;width: 32px;border-radius: 10px;background-color: rgba(128, 194, 166, 0.822);">
+                <i class="fas fa-address-card" style="font-size: 18px;"></i>
+              </div>
+              <a href="" class="mx-2 text-secondary text-decoration-none">
+                <p>Eilixir inc.</p>
+              </a>
+            </div>
+            <p class="text-muted">1 day ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <!-- the actual card begins -->
+        <div class="card text-start mb-1 mb-sm-5 ">
+          <div class="card-header bg-white">
+            <a href="" style="text-decoration: none; color: black;">
+              <h5 class="card-title fw-normal">Social Media Marketing assistant</h5>
+            </a>
+          </div>
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <div class="d-block">
+                <h6>$50</h6>
+                <p class="text-secondary">negotiable</p>
+              </div>
+              <div class="d-block">
+                <h6>2 months</h6>
+                <p class="text-secondary">duration</p>
+              </div>
+              <div class="d-block">
+                <h6>Beginner</h6>
+                <p class="text-secondary">experience level</p>
+              </div>
+            </div>
+            <p class="card-text" style="text-overflow: ellipsis; overflow: hidden;">A brief description of the
+              project, mentioning few requirements</p><br>
+            <div class="d-flex justify-content-md-start">
+              <a href="" class="mx-1" style="text-decoration: none;"><span class="badge rounded-pill text-dark"
+                  style="background-color: rgb(210, 219, 209);">content writing</span></a>
+              <a href="" class="mx-1" style="text-decoration: none;"><span class="badge rounded-pill text-dark"
+                  style="background-color: rgb(210, 219, 209);">customer support</span></a>
+            </div>
+          </div>
+          <div class="card-footer d-flex justify-content-between">
+            <div class="d-flex align-items-center">
+              <div class="d-flex justify-content-center align-items-center"
+                style="height: 32px;width: 32px;border-radius: 10px;background-color: rgba(190, 156, 93, 0.925);">
+                <i class="fas fa-address-card" style="font-size: 18px;"></i>
+              </div>
+              <a href="" class="mx-2 text-secondary text-decoration-none">
+                <p>The Seattle company</p>
+              </a>
+            </div>
+            <p class="text-muted">2 days ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <!-- the actual card begins -->
+        <div class="card text-start mb-1 mb-sm-5 ">
+          <div class="card-header bg-white">
+            <a href="" style="text-decoration: none; color: black;">
+              <h5 class="card-title fw-normal">Chemist needed for formulating cosmetics</h5>
+            </a>
+          </div>
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <div class="d-block">
+                <h6>$800</h6>
+                <p class="text-secondary">fixed price</p>
+              </div>
+              <div class="d-block">
+                <h6>6 months</h6>
+                <p class="text-secondary">duration</p>
+              </div>
+              <div class="d-block">
+                <h6>Intermediate</h6>
+                <p class="text-secondary">experience level</p>
+              </div>
+            </div>
+            <p class="card-text" style="text-overflow: ellipsis; overflow: hidden;">A brief description of the
+              project, mentioning few requirements</p><br>
+            <div class="d-flex justify-content-md-start">
+              <a href="" class="mx-1" style="text-decoration: none;"><span class="badge rounded-pill text-dark"
+                  style="background-color: rgb(210, 219, 209);">product formulation</span></a>
+              <a href="" class="mx-1" style="text-decoration: none;"><span class="badge rounded-pill text-dark"
+                  style="background-color: rgb(210, 219, 209);">cosmetics</span></a>
+            </div>
+          </div>
+          <div class="card-footer d-flex justify-content-between">
+            <div class="d-flex align-items-center">
+              <div class="d-flex justify-content-center align-items-center"
+                style="height: 32px;width: 32px;border-radius: 10px;background-color: rgba(44, 154, 228, 0.973);">
+                <i class="fas fa-address-card" style="font-size: 18px;"></i>
+              </div>
+              <a href="" class="mx-2 text-secondary text-decoration-none">
+                <p>Alchemy</p>
+              </a>
+            </div>
+            <p class="text-muted">3 days ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <!-- the actual card begins -->
+        <div class="card text-start mb-1 mb-sm-5 ">
+          <div class="card-header bg-white">
+            <a href="" style="text-decoration: none; color: black;">
+              <h5 class="card-title fw-normal">Senior iOS engineer</h5>
+            </a>
+          </div>
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <div class="d-block">
+                <h6>$2000</h6>
+                <p class="text-secondary">fixed price</p>
+              </div>
+              <div class="d-block">
+                <h6>1 month</h6>
+                <p class="text-secondary">duration</p>
+              </div>
+              <div class="d-block">
+                <h6>Expert</h6>
+                <p class="text-secondary">experience level</p>
+              </div>
+            </div>
+            <p class="card-text" style="text-overflow: ellipsis; overflow: hidden;">A brief description of the
+              project, mentioning few requirements</p><br>
+            <div class="d-flex justify-content-md-start">
+              <a href="" class="mx-1" style="text-decoration: none;"><span class="badge rounded-pill text-dark"
+                  style="background-color: rgb(210, 219, 209);">xcode</span></a>
+              <a href="" class="mx-1" style="text-decoration: none;"><span class="badge rounded-pill text-dark"
+                  style="background-color: rgb(210, 219, 209);">swift</span></a>
+              <a href="" class="mx-1" style="text-decoration: none;"><span class="badge rounded-pill text-dark"
+                  style="background-color: rgb(210, 219, 209);">api</span></a>
+            </div>
+          </div>
+          <div class="card-footer d-flex justify-content-between">
+            <div class="d-flex align-items-center">
+              <div class="d-flex justify-content-center align-items-center"
+                style="height: 32px;width: 32px;border-radius: 10px;background-color: rgba(139, 202, 67, 0.925);">
+                <i class="fas fa-address-card" style="font-size: 18px;"></i>
+              </div>
+              <a href="" class="mx-2 text-secondary text-decoration-none">
+                <p>The XYZ company</p>
+              </a>
+            </div>
+            <p class="text-muted">8 days ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- another row -->
+    <div class="row">
+      <div class="col-md-3">
+        <!-- the actual card begins -->
+        <div class="card text-start mb-1 mb-sm-5 ">
+          <div class="card-header bg-white">
+            <a href="" style="text-decoration: none; color: black;">
+              <h5 class="card-title fw-normal">A cryptocurrency landing page</h5>
+            </a>
+          </div>
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <div class="d-block">
+                <h6>$300</h6>
+                <p class="text-secondary">fixed price</p>
+              </div>
+              <div class="d-block">
+                <h6>2 weeks</h6>
+                <p class="text-secondary">duration</p>
+              </div>
+              <div class="d-block">
+                <h6>Intermediate</h6>
+                <p class="text-secondary">experience level</p>
+              </div>
+            </div>
+            <p class="card-text" style="text-overflow: ellipsis; overflow: hidden;">A brief description of the
+              project, mentioning few requirements</p><br>
+            <div class="d-flex justify-content-md-start">
+              <a href="" class="mx-1" style="text-decoration: none;"><span class="badge rounded-pill text-dark"
+                  style="background-color: rgb(210, 219, 209);">HTML</span></a>
+              <a href="" class="mx-1" style="text-decoration: none;"><span class="badge rounded-pill text-dark"
+                  style="background-color: rgb(210, 219, 209);">CSS</span></a>
+              <a href="" class="mx-1" style="text-decoration: none;"><span class="badge rounded-pill text-dark"
+                  style="background-color: rgb(210, 219, 209);">Bootstrap</span></a>
+              <a href="" class="mx-1" style="text-decoration: none;"><span class="badge rounded-pill text-dark"
+                  style="background-color: rgb(210, 219, 209);">JS</span></a>
+              <a href="" class="mx-1" style="text-decoration: none;"><span class="badge rounded-pill text-dark"
+                  style="background-color: rgb(210, 219, 209);">SEO</span></a>
+            </div>
+          </div>
+          <div class="card-footer d-flex justify-content-between">
+            <div class="d-flex align-items-center">
+              <div class="d-flex justify-content-center align-items-center"
+                style="height: 32px;width: 32px;border-radius: 10px;background-color: rgba(129, 62, 74, 0.925);">
+                <i class="fas fa-address-card" style="font-size: 18px;"></i>
+              </div>
+              <a href="" class="mx-2 text-secondary text-decoration-none">
+                <p>The XYZ company</p>
+              </a>
+            </div>
+            <p class="text-muted">2 days ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <!-- the actual card begins -->
+        <div class="card text-start mb-1 mb-sm-5 ">
+          <div class="card-header bg-white">
+            <a href="" style="text-decoration: none; color: black;">
+              <h5 class="card-title fw-normal">Social Media Marketing assistant</h5>
+            </a>
+          </div>
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <div class="d-block">
+                <h6>$50</h6>
+                <p class="text-secondary">negotiable</p>
+              </div>
+              <div class="d-block">
+                <h6>2 months</h6>
+                <p class="text-secondary">duration</p>
+              </div>
+              <div class="d-block">
+                <h6>Beginner</h6>
+                <p class="text-secondary">experience level</p>
+              </div>
+            </div>
+            <p class="card-text" style="text-overflow: ellipsis; overflow: hidden;">A brief description of the
+              project, mentioning few requirements</p><br>
+            <div class="d-flex justify-content-md-start">
+              <a href="" class="mx-1" style="text-decoration: none;"><span class="badge rounded-pill text-dark"
+                  style="background-color: rgb(210, 219, 209);">content writing</span></a>
+              <a href="" class="mx-1" style="text-decoration: none;"><span class="badge rounded-pill text-dark"
+                  style="background-color: rgb(210, 219, 209);">customer support</span></a>
+            </div>
+          </div>
+          <div class="card-footer d-flex justify-content-between">
+            <div class="d-flex align-items-center">
+              <div class="d-flex justify-content-center align-items-center"
+                style="height: 32px;width: 32px;border-radius: 10px;background-color: rgba(83, 68, 218, 0.925);">
+                <i class="fas fa-address-card" style="font-size: 18px;"></i>
+              </div>
+              <a href="" class="mx-2 text-secondary text-decoration-none">
+                <p>The Seattle company</p>
+              </a>
+            </div>
+            <p class="text-muted">2 days ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <!-- the actual card begins -->
+        <div class="card text-start mb-1 mb-sm-5 ">
+          <div class="card-header bg-white">
+            <a href="" style="text-decoration: none; color: black;">
+              <h5 class="card-title fw-normal">Chemist needed for formulating cosmetics</h5>
+            </a>
+          </div>
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <div class="d-block">
+                <h6>$800</h6>
+                <p class="text-secondary">fixed price</p>
+              </div>
+              <div class="d-block">
+                <h6>6 months</h6>
+                <p class="text-secondary">duration</p>
+              </div>
+              <div class="d-block">
+                <h6>Intermediate</h6>
+                <p class="text-secondary">experience level</p>
+              </div>
+            </div>
+            <p class="card-text" style="text-overflow: ellipsis; overflow: hidden;">A brief description of the
+              project, mentioning few requirements</p><br>
+            <div class="d-flex justify-content-md-start">
+              <a href="" class="mx-1" style="text-decoration: none;"><span class="badge rounded-pill text-dark"
+                  style="background-color: rgb(210, 219, 209);">product formulation</span></a>
+              <a href="" class="mx-1" style="text-decoration: none;"><span class="badge rounded-pill text-dark"
+                  style="background-color: rgb(210, 219, 209);">cosmetics</span></a>
+            </div>
+          </div>
+          <div class="card-footer d-flex justify-content-between">
+            <div class="d-flex align-items-center">
+              <div class="d-flex justify-content-center align-items-center"
+                style="height: 32px;width: 32px;border-radius: 10px;background-color: rgba(37, 172, 172, 0.925);">
+                <i class="fas fa-address-card" style="font-size: 18px;"></i>
+              </div>
+              <a href="" class="mx-2 text-secondary text-decoration-none">
+                <p>Alchemy</p>
+              </a>
+            </div>
+            <p class="text-muted">3 days ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <!-- the actual card begins -->
+        <div class="card text-start mb-1 mb-sm-5 ">
+          <div class="card-header bg-white">
+            <a href="" style="text-decoration: none; color: black;">
+              <h5 class="card-title fw-normal">Senior iOS engineer</h5>
+            </a>
+          </div>
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <div class="d-block">
+                <h6>$2000</h6>
+                <p class="text-secondary">fixed price</p>
+              </div>
+              <div class="d-block">
+                <h6>1 month</h6>
+                <p class="text-secondary">duration</p>
+              </div>
+              <div class="d-block">
+                <h6>Expert</h6>
+                <p class="text-secondary">experience level</p>
+              </div>
+            </div>
+            <p class="card-text" style="text-overflow: ellipsis; overflow: hidden;">A brief description of the
+              project, mentioning few requirements</p><br>
+            <div class="d-flex justify-content-md-start">
+              <a href="" class="mx-1" style="text-decoration: none;"><span class="badge rounded-pill text-dark"
+                  style="background-color: rgb(210, 219, 209);">xcode</span></a>
+              <a href="" class="mx-1" style="text-decoration: none;"><span class="badge rounded-pill text-dark"
+                  style="background-color: rgb(210, 219, 209);">swift</span></a>
+              <a href="" class="mx-1" style="text-decoration: none;"><span class="badge rounded-pill text-dark"
+                  style="background-color: rgb(210, 219, 209);">api</span></a>
+            </div>
+          </div>
+          <div class="card-footer d-flex justify-content-between">
+            <div class="d-flex align-items-center">
+              <div class="d-flex justify-content-center align-items-center"
+                style="height: 32px;width: 32px;border-radius: 10px;background-color: rgba(207, 55, 93, 0.925);">
+                <i class="fas fa-address-card" style="font-size: 18px;"></i>
+              </div>
+              <a href="" class="mx-2 text-secondary text-decoration-none">
+                <p>The XYZ company</p>
+              </a>
+            </div>
+            <p class="text-muted">8 days ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- </div> -->
+
+  <!-- mobileNavbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light mobile-navbar">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">circleUp</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="#"><i class="fas fa-home text-secondary" style="font-size: 25px;"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item mr-1 mr-md-2 mr-sm-2">
+            <i class="fas fa-border-all text-secondary" style="font-size: 25px;"></i>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <i class="fas fa-plus-square text-secondary" style="font-size: 25px;"></i>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Dropdown
+          <li class="nav-item">
+            <i class="fas fa-pen-alt text-secondary" style="font-size: 25px;"></i>
+          </li>
+          <li class="nav-item dropup">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-angle-double-right text-secondary"></i> More
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#"><i class="fab fa-buffer text-secondary"></i> Create an offer</a>
               </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fas fa-user-md  text-secondary"></i> Jobs</a></li>
             </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
-          </li>
         </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
       </div>
     </div>
   </nav>
 
-  <!-- sidebar -->
-  <div class="sidebar">
-    
+  <!-- mobileTopBar -->
+    <div class="mobile-top-bar d-flex justify-content-around align-items-center">
+      <div class="d-flex align-items-center">
+        <img style="width: 45px;height: 45px;" src="../assets//images//logo.png" alt="topImg">
+        <h3>Circleup</h3>
+      </div>
+      <div class="d-flex align-items-center">
+        <p class="fw-light pt-2">for everyone</p>
+      </div>
   </div>
-
-  <!-- promotion -->
-  <section class="promotion mx-auto p-3 d-flex justify-content-center">
-    <div class="p-5">
-      <h1 class="text-white">Find your desired project</h1>
-      <h4 class="text-white fw-light">and make your own network, your own circle</h4>
-    </div>
-    <div class="d-flex pt-5">
-      <div class="post-button mx-2 d-flex align-items-center">
-        <a href="" class="text-decoration-none mx-auto">
-          <h3 class="fw-normal">Post a job</h3>
-        </a>
-      </div>
-      <div class="post-button mx-2 d-flex align-items-center">
-        <a href="" class="text-decoration-none mx-auto">
-          <h3 class="fw-normal">Find Job</h3>
-        </a>
-      </div>
-      <div class="post-button mx-2 d-flex align-items-center">
-        <a href="" class="text-decoration-none mx-auto">
-          <h3 class="fw-normal">Contact</h3>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- itemList -->
-  <section class="container p-4 mx-auto">
-    <div class="row">
-      <div class="col-md-3  col-sm-6 mb-md-4 mb-sm-3 mb-lg-5">
-        <div class="card" style="width: 19rem;">
-          <img src="/Feed/artImage (2).png" class="card-img-top" alt="random">
-          <div class="card-body">
-            <p class="badge rounded-pill bg-light text-dark">category </p>
-            <p class="card-text">project description...</p>
-            <div class="d-flex justify-content-around card-buttons">
-              <a href=""><i class="fas fa-thumbs-up"></i></a>
-              <a href=""><i class="fas fa-share"></i></a>
-              <a href=""><i class="fas fa-bookmark"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3  col-sm-6 mb-md-4 mb-sm-3 mb-lg-5">
-        <div class="card" style="width: 19rem;">
-          <img src="/Feed/artImage (1).png" class="card-img-top" alt="art">
-          <div class="card-body">
-            <p class="badge rounded-pill bg-light text-dark">category </p>
-            <p class="card-text">project description...</p>
-            <div class="d-flex justify-content-around card-buttons">
-              <a href=""><i class="fas fa-thumbs-up"></i></a>
-              <a href=""><i class="fas fa-share"></i></a>
-              <a href=""><i class="fas fa-bookmark"></i></a>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3  col-sm-6 mb-md-4 mb-sm-3 mb-lg-5">
-        <div class="card" style="width: 19rem;">
-          <img src="/Feed/artImage (1).png" class="card-img-top" alt="art">
-          <div class="card-body">
-            <p class="badge rounded-pill bg-light text-dark">category </p>
-            <p class="card-text">project description...</p>
-            <div class="d-flex justify-content-around card-buttons">
-              <a href=""><i class="fas fa-thumbs-up"></i></a>
-              <a href=""><i class="fas fa-share"></i></a>
-              <a href=""><i class="fas fa-bookmark"></i></a>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3  col-sm-6 mb-md-4 mb-sm-3 mb-lg-5">
-        <div class="card" style="width: 19rem;">
-          <img src="/Feed/artImage (1).png" class="card-img-top" alt="art">
-          <div class="card-body">
-            <p class="badge rounded-pill bg-light text-dark">category </p>
-            <p class="card-text">project description...</p>
-            <div class="d-flex justify-content-around card-buttons">
-              <a href=""><i class="fas fa-thumbs-up"></i></a>
-              <a href=""><i class="fas fa-share"></i></a>
-              <a href=""><i class="fas fa-bookmark"></i></a>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-3  col-sm-6 mb-md-4 mb-sm-3 mb-lg-5">
-        <div class="card" style="width: 19rem;">
-          <img src="/Feed/artImage (3).png" class="card-img-top" alt="art">
-          <div class="card-body">
-            <p class="badge rounded-pill bg-light text-dark">category </p>
-            <p class="card-text">project description...</p>
-            <div class="d-flex justify-content-around card-buttons">
-              <a href=""><i class="fas fa-thumbs-up"></i></a>
-              <a href=""><i class="fas fa-share"></i></a>
-              <a href=""><i class="fas fa-bookmark"></i></a>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3  col-sm-6 mb-md-4 mb-sm-3 mb-lg-5">
-        <div class="card" style="width: 19rem;">
-          <img src="/Feed/artImage (4).png" class="card-img-top" alt="art">
-          <div class="card-body">
-            <p class="badge rounded-pill bg-light text-dark">category </p>
-            <p class="card-text">project description...</p>
-            <div class="d-flex justify-content-around card-buttons">
-              <a href=""><i class="fas fa-thumbs-up"></i></a>
-              <a href=""><i class="fas fa-share"></i></a>
-              <a href=""><i class="fas fa-bookmark"></i></a>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3  col-sm-6 mb-md-4 mb-sm-3 mb-lg-5">
-        <div class="card" style="width: 19rem;">
-          <img src="/Feed/artImage (5).png" class="card-img-top" alt="art">
-          <div class="card-body">
-            <p class="badge rounded-pill bg-light text-dark">category </p>
-            <p class="card-text">project description...</p>
-            <div class="d-flex justify-content-around card-buttons">
-              <a href=""><i class="fas fa-thumbs-up"></i></a>
-              <a href=""><i class="fas fa-share"></i></a>
-              <a href=""><i class="fas fa-bookmark"></i></a>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3  col-sm-6 mb-md-4 mb-sm-3 mb-lg-5">
-        <div class="card" style="width: 19rem;">
-          <img src="/Feed/artImage (1).png" class="card-img-top" alt="art">
-          <div class="card-body">
-            <p class="badge rounded-pill bg-light text-dark">category </p>
-            <p class="card-text">project description...</p>
-            <div class="d-flex justify-content-around card-buttons">
-              <a href=""><i class="fas fa-thumbs-up"></i></a>
-              <a href=""><i class="fas fa-share"></i></a>
-              <a href=""><i class="fas fa-bookmark"></i></a>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-3  col-sm-6 mb-md-4 mb-sm-3 mb-lg-5">
-        <div class="card" style="width: 19rem;">
-          <img src="/Feed/artImage (2).png" class="card-img-top" alt="art">
-          <div class="card-body">
-            <p class="badge rounded-pill bg-light text-dark">category </p>
-            <p class="card-text">project description...</p>
-            <div class="d-flex justify-content-around card-buttons">
-              <a href=""><i class="fas fa-thumbs-up"></i></a>
-              <a href=""><i class="fas fa-share"></i></a>
-              <a href=""><i class="fas fa-bookmark"></i></a>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3  col-sm-6 mb-md-4 mb-sm-3 mb-lg-5">
-        <div class="card" style="width: 19rem;">
-          <img src="/Feed/artImage (2).png" class="card-img-top" alt="art">
-          <div class="card-body">
-            <p class="badge rounded-pill bg-light text-dark">category </p>
-            <p class="card-text">project description...</p>
-            <div class="d-flex justify-content-around card-buttons">
-              <a href=""><i class="fas fa-thumbs-up"></i></a>
-              <a href=""><i class="fas fa-share"></i></a>
-              <a href=""><i class="fas fa-bookmark"></i></a>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3  col-sm-6 mb-md-4 mb-sm-3 mb-lg-5">
-        <div class="card" style="width: 19rem;">
-          <img src="/Feed/artImage (3).png" class="card-img-top" alt="art">
-          <div class="card-body">
-            <p class="badge rounded-pill bg-light text-dark">category </p>
-            <p class="card-text">project description...</p>
-            <div class="d-flex justify-content-around card-buttons">
-              <a href=""><i class="fas fa-thumbs-up"></i></a>
-              <a href=""><i class="fas fa-share"></i></a>
-              <a href=""><i class="fas fa-bookmark"></i></a>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3  col-sm-6 mb-md-4 mb-sm-3 mb-lg-5">
-        <div class="card" style="width: 19rem;">
-          <img src="/Feed/artImage (5).png" class="card-img-top" alt="art">
-          <div class="card-body">
-            <p class="badge rounded-pill bg-light text-dark">category </p>
-            <p class="card-text">project description...</p>
-            <div class="d-flex justify-content-around card-buttons">
-              <a href=""><i class="fas fa-thumbs-up"></i></a>
-              <a href=""><i class="fas fa-share"></i></a>
-              <a href=""><i class="fas fa-bookmark"></i></a>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-3  col-sm-6 mb-md-4 mb-sm-3 mb-lg-5">
-        <div class="card" style="width: 19rem;">
-          <img src="/Feed/artImage (4).png" class="card-img-top" alt="art">
-          <div class="card-body">
-            <p class="badge rounded-pill bg-light text-dark">category </p>
-            <p class="card-text">project description...</p>
-            <div class="d-flex justify-content-around card-buttons">
-              <a href=""><i class="fas fa-thumbs-up"></i></a>
-              <a href=""><i class="fas fa-share"></i></a>
-              <a href=""><i class="fas fa-bookmark"></i></a>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3  col-sm-6 mb-md-4 mb-sm-3 mb-lg-5">
-        <div class="card" style="width: 19rem;">
-          <img src="/Feed/artImage (1).png" class="card-img-top" alt="art">
-          <div class="card-body">
-            <p class="badge rounded-pill bg-light text-dark">category </p>
-            <p class="card-text">project description...</p>
-            <div class="d-flex justify-content-around card-buttons">
-              <a href=""><i class="fas fa-thumbs-up"></i></a>
-              <a href=""><i class="fas fa-share"></i></a>
-              <a href=""><i class="fas fa-bookmark"></i></a>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3  col-sm-6 mb-md-4 mb-sm-3 mb-lg-5">
-        <div class="card" style="width: 19rem;">
-          <img src="/Feed/artImage (2).png" class="card-img-top" alt="art">
-          <div class="card-body">
-            <p class="badge rounded-pill bg-light text-dark">category </p>
-            <p class="card-text">project description...</p>
-            <div class="d-flex justify-content-around card-buttons">
-              <a href=""><i class="fas fa-thumbs-up"></i></a>
-              <a href=""><i class="fas fa-share"></i></a>
-              <a href=""><i class="fas fa-bookmark"></i></a>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3  col-sm-6 mb-md-4 mb-sm-3 mb-lg-5">
-        <div class="card" style="width: 19rem;">
-          <img src="/Feed/artImage (4).png" class="card-img-top" alt="art">
-          <div class="card-body">
-            <p class="badge rounded-pill bg-light text-dark">category </p>
-            <p class="card-text">project description...</p>
-            <div class="d-flex justify-content-around card-buttons">
-              <a href=""><i class="fas fa-thumbs-up"></i></a>
-              <a href=""><i class="fas fa-share"></i></a>
-              <a href=""><i class="fas fa-bookmark"></i></a>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-3  col-sm-6 mb-md-4 mb-sm-3 mb-lg-5">
-        <div class="card" style="width: 19rem;">
-          <img src="/Feed/artImage (2).png" class="card-img-top" alt="art">
-          <div class="card-body">
-            <p class="badge rounded-pill bg-light text-dark">category </p>
-            <p class="card-text">project description...</p>
-            <div class="d-flex justify-content-around card-buttons">
-              <a href=""><i class="fas fa-thumbs-up"></i></a>
-              <a href=""><i class="fas fa-share"></i></a>
-              <a href=""><i class="fas fa-bookmark"></i></a>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3  col-sm-6 mb-md-4 mb-sm-3 mb-lg-5">
-        <div class="card" style="width: 19rem;">
-          <img src="/Feed/artImage (3).png" class="card-img-top" alt="art">
-          <div class="card-body">
-            <p class="badge rounded-pill bg-light text-dark">category </p>
-            <p class="card-text">project description...</p>
-            <div class="d-flex justify-content-around card-buttons">
-              <a href=""><i class="fas fa-thumbs-up"></i></a>
-              <a href=""><i class="fas fa-share"></i></a>
-              <a href=""><i class="fas fa-bookmark"></i></a>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3  col-sm-6 mb-md-4 mb-sm-3 mb-lg-5">
-        <div class="card" style="width: 19rem;">
-          <img src="/Feed/artImage (5).png" class="card-img-top" alt="art">
-          <div class="card-body">
-            <p class="badge rounded-pill bg-light text-dark">category </p>
-            <p class="card-text">project description...</p>
-            <div class="d-flex justify-content-around card-buttons">
-              <a href=""><i class="fas fa-thumbs-up"></i></a>
-              <a href=""><i class="fas fa-share"></i></a>
-              <a href=""><i class="fas fa-bookmark"></i></a>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3  col-sm-6 mb-md-4 mb-sm-3 mb-lg-5">
-        <div class="card" style="width: 19rem;">
-          <img src="/Feed/artImage (1).png" class="card-img-top" alt="art">
-          <div class="card-body">
-            <p class="badge rounded-pill bg-light text-dark">category </p>
-            <p class="card-text">project description...</p>
-            <div class="d-flex justify-content-around card-buttons">
-              <a href=""><i class="fas fa-thumbs-up"></i></a>
-              <a href=""><i class="fas fa-share"></i></a>
-              <a href=""><i class="fas fa-bookmark"></i></a>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-3  col-sm-6 mb-md-4 mb-sm-3 mb-lg-5">
-        <div class="card" style="width: 19rem;">
-          <img src="/Feed/artImage (3).png" class="card-img-top" alt="art">
-          <div class="card-body">
-            <p class="badge rounded-pill bg-light text-dark">category </p>
-            <p class="card-text">project description...</p>
-            <div class="d-flex justify-content-around card-buttons">
-              <a href=""><i class="fas fa-thumbs-up"></i></a>
-              <a href=""><i class="fas fa-share"></i></a>
-              <a href=""><i class="fas fa-bookmark"></i></a>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3  col-sm-6 mb-md-4 mb-sm-3 mb-lg-5">
-        <div class="card" style="width: 19rem;">
-          <img src="/Feed/artImage (4).png" class="card-img-top" alt="art">
-          <div class="card-body">
-            <p class="badge rounded-pill bg-light text-dark">category </p>
-            <p class="card-text">project description...</p>
-            <div class="d-flex justify-content-around card-buttons">
-              <a href=""><i class="fas fa-thumbs-up"></i></a>
-              <a href=""><i class="fas fa-share"></i></a>
-              <a href=""><i class="fas fa-bookmark"></i></a>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3  col-sm-6 mb-md-4 mb-sm-3 mb-lg-5">
-        <div class="card" style="width: 19rem;">
-          <img src="/Feed/artImage (2).png" class="card-img-top" alt="art">
-          <div class="card-body">
-            <p class="badge rounded-pill bg-light text-dark">category </p>
-            <p class="card-text">project description...</p>
-            <div class="d-flex justify-content-around card-buttons">
-              <a href=""><i class="fas fa-thumbs-up"></i></a>
-              <a href=""><i class="fas fa-share"></i></a>
-              <a href=""><i class="fas fa-bookmark"></i></a>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3  col-sm-6 mb-md-4 mb-sm-3 mb-lg-5">
-        <div class="card" style="width: 19rem;">
-          <img src="/Feed/artImage (5).png" class="card-img-top" alt="art">
-          <div class="card-body">
-            <p class="badge rounded-pill bg-light text-dark">category </p>
-            <p class="card-text">project description...</p>
-            <div class="d-flex justify-content-around card-buttons">
-              <a href=""><i class="fas fa-thumbs-up"></i></a>
-              <a href=""><i class="fas fa-share"></i></a>
-              <a href=""><i class="fas fa-bookmark"></i></a>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- footer -->
-  <footer class="container-fluid">
-    <h1 class="text-white text-center">Credentials...</h1>
-  </footer>
-
 
   <script src="feedScript.js"></script>
 </body>
