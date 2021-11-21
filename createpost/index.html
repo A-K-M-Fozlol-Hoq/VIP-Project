@@ -118,7 +118,28 @@
 
         </div>
         <div class="main-content">
-          <h1>Create a post</h1>
+          <div class="create-post">
+            <div class="felling-input">
+              <label for="felling" style="margin-right: 20px;">Felling:</label>
+              <select id="felling">
+                <option value="Happy">Happy</option>
+                <option value="Comfortable">Comfortable</option>
+                <option value="Confident">Confident</option>
+                <option value="Sad">Sad</option>
+                <option value="Nothing">Nothing</option>
+              </select>
+            </div>
+            <textarea id="post-text-input" name="comment" form="usrform">Enter text here...</textarea>
+            <p class='add-text-btn' id='add-text-btn'>Add Text</p>
+            <p style="margin-top:80px; text-align:center">Enter image file(s) (optional)</p>
+            <input type="file" name="post-image" id="post-image-input"/>
+          </div>
+          <div class="view-post">
+            <p id="post-felling-p">A.K.M Fozlol Hoq is feeling - <span id='post-felling'>Happy</span></p>
+            <div class="post-images" id='post-images-div'></div>
+            <div class="post-text" id='post-text-div'></div>
+            <p class='add-post-btn'>ADD POST</p>
+          </div>
         </div>
       </div>
     </div>
@@ -161,6 +182,7 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="./scriptCreatePost.js"></script>
     <!-- <script src="https://use.fontawesome.com/b932ac1802.js"></script> -->
   </body>
 </html>
