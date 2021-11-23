@@ -57,49 +57,49 @@
             <p class="text-info">user name</p>
           </div>
           <div class="sidebar-wrapper">
-            <div class='item' onclick="location.href = '/dashboard'">
+            <div class='item' style="background-color: #f8f9fa; color: blue" onclick="location.href = '/dashboard'">
               <div class="sidebar-icon" style='margin-left: 30px;'> 
                 <i class="fas fa-border-all"></i>
               </div>
               <p>Summary</p>
             </div>
-            <div class='item' onclick="location.href = '/createpost'">
+            <div class='item' onclick="location.href = '/dashboard/createpost'">
               <div class="sidebar-icon" style='margin-left: 30px;'> 
                 <i class="fas fa-plus-square"></i>
               </div>
               <p>Create a Post</p>
             </div>
-            <div class='item' style="background-color: #f8f9fa; color: blue"  onclick="location.href = '/writeblog'">
+            <div class='item' onclick="location.href = '/dashboard/writeblog'">
               <div class="sidebar-icon" style='margin-left: 30px;'> 
                 <i class="fas fa-pen-alt"></i>
               </div>
               <p>Write a blog</p>
             </div>
-            <div class='item' onclick="location.href = '/createoffer'">
+            <div class='item' onclick="location.href = '/dashboard/createoffer'">
               <div class="sidebar-icon" style='margin-left: 30px;'> 
                 <i class="fab fa-buffer"></i>
               </div>
               <p>Create an offer</p>
             </div>
-            <div class='item'  onclick="location.href = '/createjob'">
+            <div class='item'  onclick="location.href = '/dashboard/createjob'">
               <div class="sidebar-icon" style='margin-left: 30px;'> 
                 <i class="fas fa-briefcase"></i>
               </div>
               <p>Create a job</p>
             </div>
-            <div class='item'  onclick="location.href = '/jobs'">
+            <div class='item'  onclick="location.href = '/dashboard/jobs'">
               <div class="sidebar-icon" style='margin-left: 30px;'> 
                 <i class="fas fa-user-md"></i>
               </div>
               <p>Jobs</p>
             </div>
-            <div class='item'  onclick="location.href = '/message'">
+            <div class='item'  onclick="location.href = '/dashboard/message'">
               <div class="sidebar-icon" style='margin-left: 30px;'> 
                 <i class="fas fa-envelope-open"></i>
               </div>
               <p>Message</p>
             </div>
-            <div class='item'  onclick="location.href = '/calendar'">
+            <div class='item'  onclick="location.href = '/dashboard/calendar'">
               <div class="sidebar-icon" style='margin-left: 30px;'> 
                 <i class="fas fa-calendar-alt"></i>
               </div>
@@ -107,7 +107,7 @@
                 Calendar
               </p>
             </div>
-            <div class='item'  onclick="location.href = '/more'">
+            <div class='item'  onclick="location.href = '/dashboard/more'">
               <div class="sidebar-icon" style='margin-left: 30px;'> 
                 <i class="fas fa-angle-double-right"></i>
               </div>
@@ -118,24 +118,18 @@
 
         </div>
         <div class="main-content">
-          <div class="create-post">
-            <input type="text" class="form-control mb-2" id='post-title-input' placeholder='Enter title' onkeypress="changeTitle()"> 
-            <input type="text" class="form-control mb-2" id='post-sub-title-input' placeholder='Enter sub title' onkeypress="changeSubTitle()"> 
-            <textarea id="post-text-input" name="comment" class="form-control mb-3" form="usrform">write new text block...</textarea>
-            <p class='add-text-btn' id='add-text-btn'>Add Text Block</p>
-            <p style="margin-top:80px; text-align:center">Enter image file(s) (optional)</p>
-            <input type="file" name="post-image" id="post-image-input" accept="image/*"/>
-          </div>
-          <div class="view-post">
-            <!-- <p id="post-felling-p" class="post-felling-p">A.K.M Fozlol Hoq is feeling - <span id='post-felling'>Happy</span></p> -->
-            
-            <div class="post-content" id='post-content-div'>
-              <h2 class="post-title text-center mb-2" id='post-title-div'>Title: <span id='post-title-div-span'></span></h2>
-              <div class="title-divider"></div>
-              <h4 class="post-sub-title text-center mb-2" id='post-sub-title-div'>Sub title: <span id='post-sub-title-div-span'></span></h4>
-              <div class="title-divider"></div>
+          <div class="chat">
+            <div class="chat-window" id="chat-window">
+              <div id="messages">
+                <span class="message-span">
+                  <i class='name'>Host: </i> Hello, welcome to the chat
+                </span>
+              </div>
+              <form id="messageForm" autoComplete="off">
+                <input type="text" placeholder="Enter a message" id="message-input">
+                <button id="msg-btn" type='submit'></button>
+              </form>
             </div>
-            <p class='add-post-btn'>PUBLISH BLOG</p>
           </div>
         </div>
       </div>
@@ -179,7 +173,7 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-    <script src="./script.js"></script>
+    <script src='./script.js'></script>
     <!-- <script src="https://use.fontawesome.com/b932ac1802.js"></script> -->
   </body>
 </html>
