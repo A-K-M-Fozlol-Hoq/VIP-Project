@@ -38,41 +38,7 @@ felling.addEventListener('change', (event) => {
     // const liveImg = await uploadImage(event.target.files[0])
     // img.src = liveImg;
     console.log(postImagesDiv);
+    crossBtnDiv.addEventListener('click',()=>{
+        imgDiv.style.display = 'none';
+    })
 })
-
-async function uploadImage(img)
- {
-    console.log(img);
-    var form = new FormData();
-    form.append('image', img)
-    var url = 'https://api.imgbb.com/1/upload?key=b33c215182400d63985c1c33c5ecf50d';
-    const config = {
-        method: 'POST',
-        mode: 'no-cors',
-        headers: {
-            "Content-Type": "application/json",
-            "Access-Control-Allow-Origin": "*",
-        },
-        body: form,
-    }
-    const response = await fetch(url, config)
-    // const json = await response.json()
-    console.log(response)
-    // return response.url;
-
-    // const profileData = new FormData();
-    // profileData.set("key", "b33c215182400d63985c1c33c5ecf50d");
-    // profileData.append("image", img);
-
-    // fetch("https://api.imgbb.com/1/upload", {
-    //       method: "POST",
-    //       profileData
-    //     })
-    //       .then((response) => response.json())
-    //       .then((data) => {
-    //         console.log(data);
-    //       })
-    //       .catch((error) => {
-    //         console.error(error);
-    //       });
- }

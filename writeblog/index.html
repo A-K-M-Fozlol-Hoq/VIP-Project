@@ -118,7 +118,23 @@
 
         </div>
         <div class="main-content">
-          <h1>Write a blog</h1>
+          <div class="create-post">
+            <input type="text" class="form-control mb-2" id='post-title-input' placeholder='Enter title' onkeypress="changeTitle()"> 
+            <input type="text" class="form-control mb-2" id='post-sub-title-input' placeholder='Enter sub title' onkeypress="changeSubTitle()"> 
+            <textarea id="post-text-input" name="comment" class="form-control mb-3" form="usrform">write new text block...</textarea>
+            <p class='add-text-btn' id='add-text-btn'>Add Text Block</p>
+            <p style="margin-top:80px; text-align:center">Enter image file(s) (optional)</p>
+            <input type="file" name="post-image" id="post-image-input" accept="image/*"/>
+          </div>
+          <div class="view-post">
+            <!-- <p id="post-felling-p" class="post-felling-p">A.K.M Fozlol Hoq is feeling - <span id='post-felling'>Happy</span></p> -->
+            
+            <div class="post-content" id='post-content-div'>
+              <div class="post-title" id='post-title-div'></div>
+              <div class="post-sub-title" id='post-sub-title-div'></div>
+            </div>
+            <p class='add-post-btn'>PUBLISH BLOG</p>
+          </div>
         </div>
       </div>
     </div>
@@ -161,6 +177,7 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="./script.js"></script>
     <!-- <script src="https://use.fontawesome.com/b932ac1802.js"></script> -->
   </body>
 </html>
