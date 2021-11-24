@@ -1,0 +1,17 @@
+body {
+  background-color: #f8f9fa;
+}
+/* <!-- GoToNavbarSection -->
+  <!-- GoToFooterSection --> */
+/* <!-- GoToMainSection --> */
+
+/* <!-- GoToFooterSection --> */
+.home-footer-wrapper {
+  background-color: rgb(0, 0, 255, 0.5);
+  color: #fff;
+}
+
+/* <!-- GoToMainSection --> */
+.main-content-wrapper {
+  background: #fff;
+}
