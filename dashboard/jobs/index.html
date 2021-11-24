@@ -25,7 +25,7 @@
       <div class="navbar-section" style="width: 90%; margin:auto">
         <nav class="navbar navbar-expand-lg navbar-light">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img style="width: 50px"src="../../assets//images//logo.png" alt=""></a>
+            <a class="navbar-brand" href="#"><img style="width: 50px"src="../assets//images//logo.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -53,11 +53,11 @@
       <div class="content">
         <div class="side-menu">
           <div class="profile">
-            <img src="../../assets/images/logo.png"  alt="">
+            <img src="../assets/images/logo.png"  alt="">
             <p class="text-info">user name</p>
           </div>
           <div class="sidebar-wrapper">
-            <div class='item' style="background-color: #f8f9fa; color: blue" onclick="location.href = '/dashboard'">
+            <div class='item' onclick="location.href = '/dashboard'">
               <div class="sidebar-icon" style='margin-left: 30px;'> 
                 <i class="fas fa-border-all"></i>
               </div>
@@ -87,13 +87,13 @@
               </div>
               <p>Create a job</p>
             </div>
-            <div class='item'  onclick="location.href = '/dashboard/jobs'">
+            <div class='item'  style="background-color: #f8f9fa; color: blue"  onclick="location.href = '/dashboard/jobs'">
               <div class="sidebar-icon" style='margin-left: 30px;'> 
                 <i class="fas fa-user-md"></i>
               </div>
               <p>Jobs</p>
             </div>
-            <div class='item'  onclick="location.href = '/dashboard/message'">
+            <div class='item' onclick="location.href = '/dashboard/message'">
               <div class="sidebar-icon" style='margin-left: 30px;'> 
                 <i class="fas fa-envelope-open"></i>
               </div>
@@ -118,111 +118,7 @@
 
         </div>
         <div class="main-content">
-          <div class="summary">
-            <div class="complete" style="background-color:#000"  onclick="location.href = '/dashboard'">
-               <img src="./images/blackWatch.PNG" alt="" />
-               <div class="summary-desc">
-                   <h5>Completed</h5>
-                   <p>Completed Projects</p>
-               </div>
-               <h2>12</h2>
-            </div>
-            <div class="awaiting" style="background-color:#D61654">
-               <img src="./images/colorWatch.PNG" alt="" />
-               <div class="summary-desc">
-                   <h5>current</h5>
-                   <p>Current Projects</p>
-               </div>
-               <h2>7</h2>
-            </div>
-            <div class="awaiting" style="background-color:#000"}}  onclick="location.href = '/dashboard/awaiting'">
-               <img src="./images/blackWatch.PNG" alt="" />
-               <div class="summary-desc">
-                   <h5>awaiting</h5>
-                   <p>Awaiting Projects</p>
-               </div>
-               <h2>3</h2>
-            </div>
-          </div>
-          
-        <div class="completed-projects">
-          <div class="control-menu">
-            <p style="color:#7F7FFF">Current Projects On Hand</p>
-            <div class="pagination">
-                <div class="double-left control-div"><div class="control-btn">&#8249;&#8249;</div></div>
-                <div class="left control-div"><div class="control-btn">&#8249;</div></div>
-                <div class="mid control-div"><p style="margin-top:1px; font-size:13px">1-5/7</p></div>
-                <div class="right control-div"><div class="control-btn">&#8250;</div></div>
-                <div class="double-right control-div"><div class="control-btn">&#8250;&#8250;</div></div>
-            </div>
-          </div>
-
-        <div style="width:101%; height:3px; background-color:#CCFFCC; margin-left:-0.5%"></div>
-        <div class="table-header">
-          <p>S/N</p>
-          <p>Project ID</p>
-          <p>Project type</p>
-          <p class="date-col">Created at</p>
-        </div>
-        <div style="width:101%; height:2px; background-color:#CCFFCC; margin-left:-0.5%"></div>
-        <div class="table-content">
-          <div class="table-row-wrapper"  onclick="location.href = '/projectDetails'">
-            <div class="table-row">
-              <p>1</p>
-              <p>23224478u833</p>
-              <p>Standard</p>
-              <p class="date-col">08/10/2021</p>
-            </div>
-            <div style="width:95%; height:1px; background-color:#CCFFCC; margin-left:2.5%"></div>
-          </div>
-        </div>
-        <div class="table-content">
-          <div class="table-row-wrapper"  onclick="location.href = '/projectDetails'">
-            <div class="table-row">
-              <p>1</p>
-              <p>23224478u833</p>
-              <p>Standard</p>
-              <p class="date-col">08/10/2021</p>
-            </div>
-            <div style="width:95%; height:1px; background-color:#CCFFCC; margin-left:2.5%"></div>
-          </div>
-        </div>
-        <div class="table-content">
-          <div class="table-row-wrapper"  onclick="location.href = '/projectDetails'">
-            <div class="table-row">
-              <p>1</p>
-              <p>23224478u833</p>
-              <p>Standard</p>
-              <p class="date-col">08/10/2021</p>
-            </div>
-            <div style="width:95%; height:1px; background-color:#CCFFCC; margin-left:2.5%"></div>
-          </div>
-        </div>
-        <div class="table-content">
-          <div class="table-row-wrapper"  onclick="location.href = '/projectDetails'">
-            <div class="table-row">
-              <p>1</p>
-              <p>23224478u833</p>
-              <p>Standard</p>
-              <p class="date-col">08/10/2021</p>
-            </div>
-            <div style="width:95%; height:1px; background-color:#CCFFCC; margin-left:2.5%"></div>
-          </div>
-        </div>
-        <div class="table-content">
-          <div class="table-row-wrapper"  onclick="location.href = '/projectDetails'">
-            <div class="table-row">
-              <p>1</p>
-              <p>23224478u833</p>
-              <p>Standard</p>
-              <p class="date-col">08/10/2021</p>
-            </div>
-            <div style="width:95%; height:1px; background-color:#CCFFCC; margin-left:2.5%"></div>
-          </div>
-        </div>
-        </div>
-
-
+          <h1>Jobs</h1>
         </div>
       </div>
     </div>

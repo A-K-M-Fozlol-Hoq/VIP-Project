@@ -1,5 +1,4 @@
 <!-- GoToNavbarSection -->
-<!-- GoToMainSection -->
 <!-- GoToFooterSection -->
 
 <!DOCTYPE html>
@@ -12,7 +11,6 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <title>CircleUP</title>
   </head>
@@ -46,62 +44,68 @@
       </div>
     </div>
 
-    <!-- GoToMainSection -->
     <div class="main-content-wrapper">
-      <div class="main-content">
-          <div class="back-btn"  onclick="location.href = '/feed'"><i class="fa fa-angle-left" style="font-size:17px"></i> Back</div>
-          <div class="post-info">
-            <img src="../assets/images/logo.png" alt="">
-            <p style='color:#4f2fdd5e;' class='author-name' onclick="location.href = '/publicProfile'">A.K.M.Fozlol Hoq</p>
-            <p>Felling-<span style='color:#4f2fdd5e;'>HAPPY</span></p>
-            <p>2min ago</p>
-          </div>
-          <div class="post-content">
-            <img src="https://miro.medium.com/max/1400/1*jvWvHKzrtBDUkMvK1OqF8w.png" alt="">
-            <img src="https://miro.medium.com/max/1360/1*2wgx0ERJV41aSLdHYy2A_g.jpeg" alt="">
-            <img src="https://miro.medium.com/max/960/1*8AcIyzgCiPl6P7-nKGLOGw.png" alt="">
-            <p>
-              1) Array.toString()
-              >> It returns an array as a comma-separated string.
-              let foods= [‘Cheese’, ‘Egg’, ‘Butter’, ‘Margarine’, ‘Yogurt’, ‘Cream’];
-              console.log(foods.toString()) // Cheese,Egg,Butter,Margarine,Yogurt,Cream
-            </p>
-            <p>
-              2) Array.join()
-              >> This method joins array elements into a string.
-              let foods= [‘Cheese’, ‘Egg’, ‘Butter’, ‘Margarine’, ‘Yogurt’, ‘Cream’];
-              console.log(foods.join(‘+’)) // Cheese+Egg+Butter+Margarine+Yogurt+Cream
-            </p>
-            <p>
-              3) Array.push()
-              >> This method adds a new element to an array.
-              let foods= [‘Cheese’, ‘Egg’, ‘Butter’, ‘Margarine’, ‘Yogurt’, ‘Cream’];
-              foods.push(‘Meat’)
-              console.log(foods) // [“Cheese”, “Egg”, “Butter”, “Margarine”, “Yogurt”, “Cream”, “Meat”]
-            </p>
-            <p>
-              4) Array.pop()
-              >> This method removes an element (last element) to an array.
-              let foods= [‘Cheese’, ‘Egg’, ‘Butter’, ‘Margarine’, ‘Yogurt’, ‘Cream’];
-              foods.pop()
-              console.log(foods) // [“Cheese”, “Egg”, “Butter”, “Margarine”, “Yogurt”]
-            </p>
-            <p>
-              5) Array.shift()
-              >> This method removes an element (firstelement) to an array.
-              let foods= [‘Cheese’, ‘Egg’, ‘Butter’, ‘Margarine’, ‘Yogurt’, ‘Cream’];
-              foods.shift()
-              console.log(foods) // [“Egg”, “Butter”, “Margarine”, “Yogurt”, “Cream”]
-            </p>
-            <p>
-              6) Array.unshift()
-              >> This method adds a new element to the beginning of an array
-              let foods= [‘Cheese’, ‘Egg’, ‘Butter’, ‘Margarine’, ‘Yogurt’, ‘Cream’];
-              foods.unshift(‘Meat’)
-              console.log(foods) // [“Meat”, “Cheese”, “Egg”, “Butter”, “Margarine”, “Yogurt”, “Cream”]
-            </p>
-          </div>
-      </div>
+        <div class="main-content">
+            <div class="summary text-center">
+                <h3 class=' mb-2'>Summary</h3>
+                <h5>project name: <span>OneDemic</span></h5>
+                <p>project title: <span>The Best Quiz Maker for Business and Education</span></p>
+                <h6>Budget: <span>5</span>$</h6>
+            </div>
+            <div class='summary-divider'></div>
+            <div class="project-info">
+                <div class="basic-info">
+                    <p><b>Assigned by:</b> <span>AKM</span></p>
+                    <p><b>Assigned to:</b> <span>Fozlol Hoq</span></p>
+                    <p><b>Assigned date:</b> <span>12/11/21</span></p>
+                    <p><b>Due date:</b> <span>30/12/21</span></p>
+                    <p><b>Project Size:</b> <span>Large Scale</span></p>
+                </div>
+                <div class='info-divider'></div>
+                <div class="advance-info">
+                    <h5>Required Technology</h5>
+                    <ul>
+                        <li>ReactJS</li>
+                        <li>Redux</li>
+                        <li>NodeJS</li>
+                        <li>ExpressJS</li>
+                        <li>MongoDB</li>
+                        <li>SocketIO</li>
+                        <li>Firebase</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="description">
+                <div class="features">
+                    <h3 class='text-center mt-5'>Key Features</h3>
+                    <div class="all-features">
+                        <ul>
+                            <li>Role based authentication for teacher an student and kept the functionality to update profile and username. </li>
+                            <li>Teacher can create course, create exam, manage students and view all student’s result (of MCQ exam) & see answer script (PDF- for written examination)</li>
+                            <li>Student can enroll new course, attend exams and see his/her results.</li>
+                            <li>Teacher can remove and do block any student from the course</li>
+                            <li>During the examination, if time runs out , the submit button will be disabled.</li>
+                            <li>For communication purpose, we kept chatting functionality for each course.</li>
+                            <li>Technology used: React JS, React Router, Firebase, Express JS, MongoDB, Bootstrap, MaterialUI, Socket-IO.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="documentation">
+                    <div class="edit">
+                        <p>Edit mode</p>
+                        <div>
+                            <div class="edit-mode-enable" id='edit-mode-enable'></div>
+                            <div class="edit-mode-disable" id='edit-mode-disable'></div>
+                        </div>
+                        <img id='change-edit-mode' src="./images/editIcon.png" alt="">
+                    </div>
+                    <div class="documentation-div" id='documentation-div'>documentation-div documentation-div</div>
+                    <div class="documentation-input"  id="documentation-input" >
+                        <textarea class="form-control mb-3" id='text-area-input' form="usrform">write new text block...</textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- GoToFooterSection -->
@@ -137,16 +141,12 @@
         </div>
       </footer>
     </div>
-
-
-    
-
-
     
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script type="text/javascript" src="./script.js"></script>
   </body>
 </html>
