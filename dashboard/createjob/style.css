@@ -37,8 +37,8 @@
   /* background-color: #521A39; */
   background-color: #f8f9fa;
   color: blue;
-  transform: rotate(360deg);
-  /* transition-timing-function: ease-in-out; */
+  /* transform: rotate(360deg); */
+  transition-timing-function: ease-in-out;
   transition-duration: 1s;
 }
 .feed-main-content-wrapper .item .sidebar-icon {

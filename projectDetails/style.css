@@ -19,7 +19,7 @@ body {
     padding-top:50px;
     padding-bottom: 50px;
 }
-.main-content .documentation-input{
+.main-content #documentation-input{
     display:none;
 }
 .main-content .summary-divider{
@@ -76,5 +76,52 @@ body {
     /* margin:20px auto; */
     /* transform: scale(1.02); */
     font-size: 18px;
+    transition: 1s;
+}
+.main-content .documentation .edit{
+    display: grid;
+    grid-template-columns: 80px 1fr 20px;
+    margin-top: 40px;
+}
+.main-content .documentation .edit img{
+    width:100%;
+}
+.main-content .documentation .edit-mode-enable,
+.main-content .documentation .edit-mode-disable{
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    margin-top:4px;
+}
+.main-content .documentation .edit-mode-enable{
+    background: green;
+    display: none;
+}
+.main-content .documentation .edit-mode-disable{
+    background:red;
+}
+.main-content .documentation .edit img:hover{
+    transform: scale(1.05);
+    transition: 1s;
+    cursor: pointer;
+    background:green;
+}
+.main-content .documentation-div,
+.main-content .documentation-input{
+    margin-top:50px;
+    height:400px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border: 2px solid rgba(0, 255, 85, 0.89);
+}
+.main-content .documentation-input textarea{
+    height:400px;
+}
+.main-content .documentation-div{
+    padding: 10px;
+}
+.main-content .documentation-div:hover{
+    cursor: pointer;
+    color: #fff;
     transition: 1s;
 }

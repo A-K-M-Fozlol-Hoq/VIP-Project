@@ -1,0 +1,22 @@
+body{
+    background-color: #F8F9FA;
+    margin: 0px;
+    padding: 0px;
+  }
+  /* <!-- GoToNavbarSection -->
+
+  <!-- GoToFooterSection --> */
+  
+  /* <!-- GoToFooterSection --> */
+  .home-footer-wrapper{
+      background-color: rgb(0, 0, 255, 0.5);
+      color: #fff;
+  }
+
+  .main-content .checkout-form{
+      border: 2px solid rgb(0, 0, 255, 0.5);
+      padding:10px;
+      border-radius:10px;
+      width:500px; 
+      margin:auto;
+  }
