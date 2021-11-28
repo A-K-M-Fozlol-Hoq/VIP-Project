@@ -30,7 +30,7 @@ body {
     border-radius: 10px;
 }
 .main-content .project-info{
-    width:400px;
+    width:450px;
     margin: 50px auto 50px;
     display: grid;
     grid-template-columns: 200px 1px 200px;
@@ -68,7 +68,7 @@ body {
     margin-top:50px;
     overflow-y: scroll;
     overflow-x: hidden;
-    color: #000;
+    color: #fff;
     cursor: pointer;
 }
 .main-content .all-features li:hover{
@@ -124,4 +124,9 @@ body {
     cursor: pointer;
     color: #fff;
     transition: 1s;
+}
+.main-content .project-info{
+    border: 1px solid #7F7FFF;
+    border-radius:10px;
+    padding: 18px;
 }

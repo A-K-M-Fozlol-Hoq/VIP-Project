@@ -30,9 +30,9 @@
         </div>
         <!-- loginForm -->
         <form action="">
-          <input type="email" class="form-control" placeholder="Email" aria-label="Username"
+          <input type="email" class="form-control" placeholder="Email" aria-label="Username" id="login-email" onkeypress="changeLoginInfo(event)"
             aria-describedby="basic-addon1" required>
-          <input type="password" class="form-control" placeholder="Password" aria-label="Username"
+          <input type="password" class="form-control" placeholder="Password" aria-label="Username" id="login-password" onkeypress="changeLoginInfo(event)"
             aria-describedby="basic-addon1" required>
           <button type="submit" class="btn btn-secondary other-button">Login</button>
           <div class="d-flex justify-content-around">
@@ -55,11 +55,11 @@
         </div>
         <!-- signupForm -->
         <form action="">
-          <input type="text" class="form-control" placeholder="First Name" aria-describedby="basic-addon1" required>
-          <input type="text" class="form-control" placeholder="Last Name" aria-describedby="basic-addon1">
-          <input type="email" class="form-control" placeholder="Email" aria-describedby="basic-addon1" required>
-          <input type="password" class="form-control" placeholder="Password" aria-describedby="basic-addon1" required>
-          <input type="password" class="form-control" placeholder="Confirm Password" aria-describedby="basic-addon1"
+          <input type="text" id="signup-firstName" class="form-control" placeholder="First Name" aria-describedby="basic-addon1" required>
+          <input type="text" id="signup-lastName" class="form-control" placeholder="Last Name" aria-describedby="basic-addon1">
+          <input type="email" id="signup-email" class="form-control" placeholder="Email" aria-describedby="basic-addon1" required>
+          <input type="password" id="signup-password" class="form-control" placeholder="Password" aria-describedby="basic-addon1" required>
+          <input type="password" id="signup-confirm-password" class="form-control" placeholder="Confirm Password" aria-describedby="basic-addon1"
             required>
           <button type="submit" class="btn btn-secondary other-button">Proceed</button>
           <p class="text-secondary text-center">or</p>
@@ -77,6 +77,7 @@
     </div>
   </section>
   <script src="./loginScript.js"></script>
+  <script src="./handleLogin.js"></script>
 </body>
 
 </html>
