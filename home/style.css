@@ -1,3 +1,9 @@
+/* navbar */
+@media only screen and (max-width: 500px) {
+  .activities-wrapper .navbar span {
+    visibility: hidden;
+  }
+}
 body{
   background-color: #F8F9FA;
 }

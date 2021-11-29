@@ -1,3 +1,9 @@
+/* navbar */
+@media only screen and (max-width: 500px) {
+  .activities-wrapper .navbar span {
+    visibility: hidden;
+  }
+}
 /* <!-- GoToMainContent -->
 <!-- GoToFooterSection --> */
 
