@@ -21,33 +21,58 @@
   <body>
     <!-- GoToNavbarSection -->
     <!-- <div class=" feed-Navbar-wrapper bg-light"> -->
-      <div class=" feed-Navbar-wrapper" style="background:#7F7FFF">
-      <div class="navbar-section" style="width: 90%; margin:auto">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img style="width: 50px"src="../assets//images//logo.png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">profile</a>
-                </li>
-              </ul>
-              <form class="d-flex">
-                <button class="btn btn-outline-success" type="submit">Login</button>
-              </form>
-            </div>
-          </div>
-        </nav>
+      <!-- navbar -->
+    <div class="activities-wrapper">
+      <section
+      class="navbar container-fluid d-flex justify-content-md-between justify-content-xs-around justify-content-sm-center align-items-center"
+      style="background-color: #232946;">
+      <div class="d-flex justify-content-evenly">
+          <a href="/home/index.html" class="text-decoration-none text-white d-flex align-items-center mx-3"><img
+                  src="/logos/1.PNG" alt="logoImage" style="border-radius: 25%;" height="42" width="45">
+              <span class="fs-3 fw-bold mx-2">CircleUp</span>
+          </a>
       </div>
+      <div class="d-flex justify-content-evenly pt-1">
+          <ul style="list-style: none;" class="d-flex">
+              <li><a href="/home/index.html" style="font-size: 1.28rem;margin-right: 62px;"
+                      class="text-decoration-none text-white">
+                      <i class="fas fa-home"></i> <span> Home</span></a></li>
+              <li><a href="/UserProfile/index.html" style="font-size: 1.28rem;margin-right: 62px;"
+                      class="text-decoration-none text-white">
+                      <i class="fas fa-user"></i> <span> Profile</span></a></li>
+              <li><a href="/dashboard/index.html" style="font-size: 1.28rem;margin-right: 62px;"
+                      class="text-decoration-none text-white">
+                      <i class="fas fa-columns"></i> <span> Dashboard</span></a></li>
+              <li><a href="/AboutUs/index.html" style="font-size: 1.28rem;margin-right: 62px;"
+                      class="text-decoration-none text-white">
+                      <i class="fas fa-info"></i> <span> About Us</span>
+                  </a></li>
+          </ul>
+      </div>
+      <div class="d-flex justify-content-evenly">
+          <ul style="list-style: none;" class="d-flex">
+              <li><a href="/Activities/index.html" style="font-size: 1.28rem;"
+                      class="text-decoration-none text-white">
+                      <i class="far fa-bell"></i>
+                  </a></li>
+              <li>
+                  <div class="btn-group mx-md-3 border-none" style="height: 24px;">
+                      <button type="button" style="font-size: 1.28rem;" class="btn dropdown-toggle text-white p-0"
+                          data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                          <p id="username">Mr.A</p>
+                      </button>
+                      <ul class="dropdown-menu dropdown-menu-start dropdown-menu-lg-start">
+                          <li><a class="dropdown-item text-decoration-none pr-5"><span style="cursor:pointer"
+                                      id="login-logout-btn">Login</span></a></li>
+                      </ul>
+                  </div>
+              </li>
+          </ul>
+      </div>
+  </section>
     </div>
-
+    <!-- navbar ends here -->
+    
     <!-- GoToMainContent -->
     <div class="feed-main-content-wrapper">
       <div class="content">

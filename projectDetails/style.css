@@ -1,3 +1,9 @@
+/* navbar */
+@media only screen and (max-width: 500px) {
+  .activities-wrapper .navbar span {
+    visibility: hidden;
+  }
+}
 body {
   background-color: #f8f9fa;
 }
@@ -15,118 +21,118 @@ body {
 .main-content-wrapper {
   background: #fff;
 }
-.main-content{
-    padding-top:50px;
-    padding-bottom: 50px;
+.main-content {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
-.main-content #documentation-input{
-    display:none;
+.main-content #documentation-input {
+  display: none;
 }
-.main-content .summary-divider{
-    height:5px;
-    width:200px;
-    margin:auto;
-    background: #000;
-    border-radius: 10px;
+.main-content .summary-divider {
+  height: 5px;
+  width: 200px;
+  margin: auto;
+  background: #000;
+  border-radius: 10px;
 }
-.main-content .project-info{
-    width:450px;
-    margin: 50px auto 50px;
-    display: grid;
-    grid-template-columns: 200px 1px 200px;
-    grid-gap: 10px;
+.main-content .project-info {
+  width: 450px;
+  margin: 50px auto 50px;
+  display: grid;
+  grid-template-columns: 200px 1px 200px;
+  grid-gap: 10px;
 }
-.main-content .info-divider{
-    background:#000;
+.main-content .info-divider {
+  background: #000;
 }
-.main-content .project-info p{
-    margin-bottom: 0px;
+.main-content .project-info p {
+  margin-bottom: 0px;
 }
-.main-content .description{
-    width: 80%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-gap: 30px;
+.main-content .description {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 30px;
 }
 .main-content .description .features,
-.main-content .description .documentation{
-    padding: 10px;
-    border-radius: 10px;
-    height:600px;
+.main-content .description .documentation {
+  padding: 10px;
+  border-radius: 10px;
+  height: 600px;
 }
-.main-content .description .features{
-    background:#6666FF;
-    border: 1px solid #000;
+.main-content .description .features {
+  background: #6666ff;
+  border: 1px solid #000;
 }
-.main-content .description .documentation{
-    background:#7F7FFF;
-    border: 1px solid #000;
+.main-content .description .documentation {
+  background: #7f7fff;
+  border: 1px solid #000;
 }
-.main-content .all-features{
-    height:400px;
-    margin-top:50px;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    color: #fff;
-    cursor: pointer;
+.main-content .all-features {
+  height: 400px;
+  margin-top: 50px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  color: #fff;
+  cursor: pointer;
 }
-.main-content .all-features li:hover{
-    color:#fff;
-    /* margin:20px auto; */
-    /* transform: scale(1.02); */
-    font-size: 18px;
-    transition: 1s;
+.main-content .all-features li:hover {
+  color: #fff;
+  /* margin:20px auto; */
+  /* transform: scale(1.02); */
+  font-size: 18px;
+  transition: 1s;
 }
-.main-content .documentation .edit{
-    display: grid;
-    grid-template-columns: 80px 1fr 20px;
-    margin-top: 40px;
+.main-content .documentation .edit {
+  display: grid;
+  grid-template-columns: 80px 1fr 20px;
+  margin-top: 40px;
 }
-.main-content .documentation .edit img{
-    width:100%;
+.main-content .documentation .edit img {
+  width: 100%;
 }
 .main-content .documentation .edit-mode-enable,
-.main-content .documentation .edit-mode-disable{
-    width:20px;
-    height:20px;
-    border-radius: 50%;
-    margin-top:4px;
+.main-content .documentation .edit-mode-disable {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-top: 4px;
 }
-.main-content .documentation .edit-mode-enable{
-    background: green;
-    display: none;
+.main-content .documentation .edit-mode-enable {
+  background: green;
+  display: none;
 }
-.main-content .documentation .edit-mode-disable{
-    background:red;
+.main-content .documentation .edit-mode-disable {
+  background: red;
 }
-.main-content .documentation .edit img:hover{
-    transform: scale(1.05);
-    transition: 1s;
-    cursor: pointer;
-    background:green;
+.main-content .documentation .edit img:hover {
+  transform: scale(1.05);
+  transition: 1s;
+  cursor: pointer;
+  background: green;
 }
 .main-content .documentation-div,
-.main-content .documentation-input{
-    margin-top:50px;
-    height:400px;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    border: 2px solid rgba(0, 255, 85, 0.89);
+.main-content .documentation-input {
+  margin-top: 50px;
+  height: 400px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  border: 2px solid rgba(0, 255, 85, 0.89);
 }
-.main-content .documentation-input textarea{
-    height:400px;
+.main-content .documentation-input textarea {
+  height: 400px;
 }
-.main-content .documentation-div{
-    padding: 10px;
+.main-content .documentation-div {
+  padding: 10px;
 }
-.main-content .documentation-div:hover{
-    cursor: pointer;
-    color: #fff;
-    transition: 1s;
+.main-content .documentation-div:hover {
+  cursor: pointer;
+  color: #fff;
+  transition: 1s;
 }
-.main-content .project-info{
-    border: 1px solid #7F7FFF;
-    border-radius:10px;
-    padding: 18px;
+.main-content .project-info {
+  border: 1px solid #7f7fff;
+  border-radius: 10px;
+  padding: 18px;
 }
