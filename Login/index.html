@@ -30,11 +30,13 @@
         </div>
         <!-- loginForm -->
         <form action="">
-          <input type="email" class="form-control" placeholder="Email" aria-label="Username" id="login-email" onkeypress="changeLoginInfo(event)"
+          <input type="email" class="form-control" placeholder="Email" aria-label="Username" id="login-email"
+          onkeyup="changeLoginInfo(event)" name="email"
             aria-describedby="basic-addon1" required>
-          <input type="password" class="form-control" placeholder="Password" aria-label="Username" id="login-password" onkeypress="changeLoginInfo(event)"
+          <input type="password" class="form-control" placeholder="Password" aria-label="Username" id="login-password"
+          onkeyup="changeLoginInfo(event)" name="password"
             aria-describedby="basic-addon1" required>
-          <button type="submit" class="btn btn-secondary other-button">Login</button>
+          <button type="submit" class="btn btn-secondary other-button"  id="login-btn">Login</button>
           <div class="d-flex justify-content-around">
             <p class="text-center"><em><a href="" class="text-secondary text-decoration-none">forgot password?</a></em>
             </p>
@@ -55,13 +57,18 @@
         </div>
         <!-- signupForm -->
         <form action="">
-          <input type="text" id="signup-firstName" class="form-control" placeholder="First Name" aria-describedby="basic-addon1" required>
-          <input type="text" id="signup-lastName" class="form-control" placeholder="Last Name" aria-describedby="basic-addon1">
-          <input type="email" id="signup-email" class="form-control" placeholder="Email" aria-describedby="basic-addon1" required>
-          <input type="password" id="signup-password" class="form-control" placeholder="Password" aria-describedby="basic-addon1" required>
-          <input type="password" id="signup-confirm-password" class="form-control" placeholder="Confirm Password" aria-describedby="basic-addon1"
+          <input type="text" id="signup-firstName" class="form-control" placeholder="First Name" name='first-name'
+          onkeyup="changeSignupInfo(event)" aria-describedby="basic-addon1" required>
+          <input type="text" id="signup-lastName" class="form-control" placeholder="Last Name" name='last-name'
+          onkeyup="changeSignupInfo(event)" aria-describedby="basic-addon1">
+          <input type="email" id="signup-email" class="form-control" placeholder="Email" name='email'
+          onkeyup="changeSignupInfo(event)" aria-describedby="basic-addon1" required>
+          <input type="password" id="signup-password" class="form-control" placeholder="Password" name="password" 
+          onkeyup="changeSignupInfo(event)" aria-describedby="basic-addon1" required>
+          <input type="password" id="signup-confirm-password" class="form-control" name="confirm-password" 
+          onkeyup="changeSignupInfo(event)" placeholder="Confirm Password" aria-describedby="basic-addon1"
             required>
-          <button type="submit" class="btn btn-secondary other-button">Proceed</button>
+          <button type="submit" class="btn btn-secondary other-button"  id="create-account-btn">Proceed</button>
           <p class="text-secondary text-center">or</p>
           <div class="d-flex justify-content-center">
             <a href="" id="login-instead" class="text-secondary text-decoration-none text-center">Login to you account</a>
