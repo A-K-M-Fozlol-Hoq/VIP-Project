@@ -15,7 +15,6 @@ const signupObject ={
     password:'',
     confirmPassword:'',
 }
-console.log('object');
 
 loginCreateAccountID.addEventListener('click', () => {
     isLogging = !isLogging;
@@ -58,7 +57,8 @@ function changeSignupInfo(event){
 }
 
 //handle login button
-loginBtnID.addEventListener('click', ()=>{
+loginBtnID.addEventListener('click', (e)=>{
+    e.preventDefault();
     if(! loginObject.email){
         alert('Please enter email first!')
     }
@@ -67,11 +67,13 @@ loginBtnID.addEventListener('click', ()=>{
     }
     if(loginObject.email && loginObject.password){
         if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(signupObject.email)){
-            if(loginObject.password.trim.length>5){
+            if(loginObject.password.trim().length>5){
                 let isLoginSuccess = false;
                 isLoginSuccess = true;
                 if(isLoginSuccess){
                     alert('logged in successfully');
+                    localStorage.setItem('loggedInEmail', loginObject.email);
+                    // localStorage.getItem('loggedInEmail')
                 }
                 else{
                     alert('login failed');
@@ -88,7 +90,8 @@ loginBtnID.addEventListener('click', ()=>{
 })
 
 //handle signup button
-createAccountBtnID.addEventListener('click', ()=>{
+createAccountBtnID.addEventListener('click', (e)=>{
+    e.preventDefault();
     if(! signupObject.firstName){
         alert('Please first name first!')
     }
@@ -118,7 +121,7 @@ createAccountBtnID.addEventListener('click', ()=>{
                 if(!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(signupObject.email))){
                     errors.push('please enter a valid email address');
                 }
-                if(signupObject.password.trim.length <6){
+                if(signupObject.password.trim().length < 6){
                     errors.push('password must be at least 6 characters');
                 }
 
@@ -131,6 +134,8 @@ createAccountBtnID.addEventListener('click', ()=>{
                     isSignupSuccess = true;
                     if(isSignupSuccess){
                         alert('signed up successfully');
+                        localStorage.setItem('loggedInEmail', signupObject.email);
+                    // localStorage.getItem('loggedInEmail')
                     }
                     else{
                         alert('signed failed');
