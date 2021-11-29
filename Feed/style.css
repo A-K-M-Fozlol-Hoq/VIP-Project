@@ -8,31 +8,11 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-.feed-wrapper #navbar {
-  position: sticky;
-  top: 0px;
-  z-index: 2;
-  box-shadow: 2px 5px 15px rgba(173, 173, 173, 0.233);
-}
-
-.feed-wrapper .mobile-navbar {
-  display: none;
-  position: sticky;
-  bottom: 0px;
-  z-index: 2;
-  box-shadow: 2px 5px 15px rgba(173, 173, 173, 0.233);
-  display: none;
-}
-
-.feed-wrapper .mobile-top-bar {
-  background-color: rgba(232, 235, 236, 0.897);
+.feed-wrapper .navbar{
   position: fixed;
   top: 0px;
-  height: 65px;
-  width: 100%;
-  display: none;
+  z-index: 1;
 }
-
 /* sidebar */
 .feed-wrapper .side-menu {
   position: fixed;
