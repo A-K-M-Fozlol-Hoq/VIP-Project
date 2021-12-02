@@ -7,7 +7,16 @@ const allTags = document.getElementById('all-tags')
 const customGigCategory = document.getElementById('custom-gig-category')
 const addCategoryBtn = document.getElementById('add-category-btn')
 const serviceType = document.getElementById('service-type')
+const gigImageInput = document.getElementById('gig-image-input')
+const gigImagesDiv = document.getElementById('gig-images-div')
+const changeEditMode= document.getElementById('change-edit-mode');
+const editModeEnable= document.getElementById('edit-mode-enable');
+const editModeDisable= document.getElementById('edit-mode-disable');
+const documentationDiv= document.getElementById('documentation-div');
+const documentationInput= document.getElementById('documentation-input');
+const textAreaInput= document.getElementById('text-area-input');
 
+let idEditModeActivated = false;
 let totalTag=0;
 
 function changeTitle() {
@@ -70,5 +79,46 @@ addCategoryBtn.addEventListener('click',()=>{
     }
     else{
         alert("The length of your custom category must be between 3 to 20");
+    }
+})
+
+gigImageInput.addEventListener ('change',(event) => {
+    const imgDiv = document.createElement("div");
+    imgDiv.classList.add('post-image-div')
+    const img = document.createElement("img");
+    const crossBtnDiv = document.createElement("div");
+    crossBtnDiv.classList.add('img-cross-div')
+    const crossBtn = document.createElement("p");
+    crossBtn.innerText='x';
+    let imgSrc= URL.createObjectURL(event.target.files[0]);
+    img.src = imgSrc;
+    imgDiv.appendChild(img)
+    crossBtnDiv.appendChild(crossBtn)
+    imgDiv.appendChild(crossBtnDiv)
+    gigImagesDiv.appendChild(imgDiv)
+    // const liveImg = await uploadImage(event.target.files[0])
+    // img.src = liveImg;
+    console.log(gigImagesDiv);
+    crossBtnDiv.addEventListener('click',()=>{
+        imgDiv.style.display = 'none';
+    })
+})
+
+
+changeEditMode.addEventListener('click', ()=>{
+    idEditModeActivated= !idEditModeActivated; 
+    if(idEditModeActivated){
+        editModeEnable.style.display = 'block';
+        editModeDisable.style.display = 'none';
+        documentationInput.style.display ='block';
+        documentationDiv.style.display ='none';
+        textAreaInput.value =documentationDiv.innerText;
+    }
+    else{
+        editModeEnable.style.display = 'none';
+        editModeDisable.style.display = 'block';
+        documentationInput.style.display ='none';
+        documentationDiv.style.display ='block';
+        documentationDiv.innerText = textAreaInput.value;
     }
 })
