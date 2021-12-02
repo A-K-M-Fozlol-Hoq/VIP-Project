@@ -143,8 +143,73 @@
 
         </div>
         <div class="main-content">
-          <h1>Create a job</h1>
-        </div>
+          <div class="part1">  
+            <p style="color:#6666FF; margin-bottom: 0px;">Job Title: </p>    
+            <input type="text" class="form-control mb-2" id='gig-title-input' placeholder='Enter title' 
+            name="gig-title" onkeyup="changeTitle()"> 
+            <p style="color:#6666FF; margin-bottom: 0px;">Job Subtitle: </p>
+            <input type="text" class="form-control mb-2" id='gig-sub-title-input' placeholder='Enter sub title' 
+            name="gig-sub-title" onkeyup="changeSubTitle()"> 
+            <p style="color:#6666FF; margin-top:50px; margin-bottom: 0px;">Added Tags: </p>
+            <div class="all-tags" id="all-tags">
+
+            </div>
+            <div class="row">
+              <div class="col-md-8">
+                <input type="text" class="form-control mb-2" id='gig-tag-input' placeholder='Enter a tag' 
+                name="gig-tag"> 
+              </div>
+              <div class="col-md-4">
+                <div class="text-center btn btn-primary w-100" id='add-gig-tag-btn'>Add Tag</div>
+              </div>
+            </div>
+            
+            <p style='margin-bottom:1px; color:blue; margin-top:50px'>Please select your service category: </p>
+            <select class='form-control mb-3' id="service-type">
+                <option value="volvo">Web Development</option>
+                <option value="saab">Machine Learning</option>
+                <option value="saab">Blockchain development</option>
+                <option value="saab">Digital Marketing</option>
+                <option value="saab">Other</option>
+            </select>
+            <div style="display: grid; grid-template-columns: 1fr 50px 1fr; grid-gap:10px;">
+              <div style="height:1px;margin-top:10px;" class="bg-primary"></div>
+              <p class="text-center">OR</p>
+              <div style="height:1px;margin-top:10px;" class="bg-primary"></div>
+            </div>
+            
+            <div class="row">
+              <div class="col-md-8">
+                <input type="text" class="form-control mb-2" placeholder='Enter your custom category' 
+              name="gig-category" id="custom-gig-category" > 
+              </div>
+              <div class="col-md-4">
+                <div class="text-center btn btn-primary w-100" id='add-category-btn'>Add Category</div>
+              </div>
+            </div>
+            </div>
+          <div class="part2">
+            
+            <p style="color:#6666FF; margin-bottom: 0px;">Enter image file(s) (1+)</p>
+            <input type="file" name="gig-image" id="gig-image-input" accept="image/*"/>
+            <div class="gig-images" id='gig-images-div'></div>
+            <div class="documentation">
+              <div class="edit">
+                  <p>Edit mode</p>
+                  <div>
+                      <div class="edit-mode-enable" id='edit-mode-enable'></div>
+                      <div class="edit-mode-disable" id='edit-mode-disable'></div>
+                  </div>
+                  <img id='change-edit-mode' src="./images/editIcon.png" alt="">
+              </div>
+              <div class="documentation-div" id='documentation-div'>documentation-div documentation-div</div>
+              <div class="documentation-input"  id="documentation-input" >
+                  <textarea class="form-control mb-3" id='text-area-input' form="usrform">write new text block...</textarea>
+              </div>
+            </div>
+            <div class="text-center btn btn-primary w-100 mt-3 pt-2 pb-2">Create Job</div>
+          </div>
+      </div>
       </div>
     </div>
     <!-- GoToFooterSection -->
@@ -186,6 +251,7 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="./script.js"></script>
     <!-- <script src="https://use.fontawesome.com/b932ac1802.js"></script> -->
   </body>
 </html>
