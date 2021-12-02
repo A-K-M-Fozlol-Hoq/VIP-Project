@@ -145,15 +145,28 @@
 
 
         <div class="main-content">
-          <div class="row">
-            <div class="col-md-6">
+            <div class="part1">  
+              <p style="color:#6666FF; margin-bottom: 0px;">Offer(gig) Title: </p>    
               <input type="text" class="form-control mb-2" id='gig-title-input' placeholder='Enter title' 
               name="gig-title" onkeyup="changeTitle()"> 
+              <p style="color:#6666FF; margin-bottom: 0px;">Offer(gig) Subtitle: </p>
               <input type="text" class="form-control mb-2" id='gig-sub-title-input' placeholder='Enter sub title' 
               name="gig-sub-title" onkeyup="changeSubTitle()"> 
+              <p style="color:#6666FF; margin-top:50px; margin-bottom: 0px;">Added Tags: </p>
+              <div class="all-tags" id="all-tags">
+
               </div>
-            <div class="col-md-6"></div>
-          </div>
+              <div class="row">
+                <div class="col-md-8">
+                  <input type="text" class="form-control mb-2" id='gig-tag-input' placeholder='Enter a tag' 
+                  name="gig-tag"> 
+                </div>
+                <div class="col-md-4">
+                  <div class="text-center btn btn-primary w-100" id='add-gig-tag-btn'>Add Tag</div>
+                </div>
+              </div>
+              </div>
+            <div class="part2"></div>
         </div>
 
 
