@@ -165,11 +165,33 @@
                   <div class="text-center btn btn-primary w-100" id='add-gig-tag-btn'>Add Tag</div>
                 </div>
               </div>
+              
+              <p style='margin-bottom:1px; color:blue; margin-top:50px'>Please select your service category: </p>
+              <select class='form-control mb-3' id="service-type">
+                  <option value="volvo">Web Development</option>
+                  <option value="saab">Machine Learning</option>
+                  <option value="saab">Blockchain development</option>
+                  <option value="saab">Digital Marketing</option>
+                  <option value="saab">Other</option>
+              </select>
+              <div style="display: grid; grid-template-columns: 1fr 50px 1fr; grid-gap:10px;">
+                <div style="height:1px;margin-top:10px;" class="bg-primary"></div>
+                <p class="text-center">OR</p>
+                <div style="height:1px;margin-top:10px;" class="bg-primary"></div>
+              </div>
+              
+              <div class="row">
+                <div class="col-md-8">
+                  <input type="text" class="form-control mb-2" placeholder='Enter your custom category' 
+                name="gig-category" id="custom-gig-category" > 
+                </div>
+                <div class="col-md-4">
+                  <div class="text-center btn btn-primary w-100" id='add-category-btn'>Add Category</div>
+                </div>
+              </div>
               </div>
             <div class="part2"></div>
         </div>
-
-
       </div>
     </div>
     <!-- GoToFooterSection -->

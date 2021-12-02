@@ -93,3 +93,32 @@
   overflow-x:hidden;
   margin-bottom:10px;
 }
+
+.main-content .tag-text-div{
+  /* width:50%; */
+  margin:0 auto 20px;
+  background: #7F7FFF;
+  padding:15px;
+  border-radius:10px;
+  min-width:100px; 
+  display: inline-block;
+  margin-right: 10px;
+  text-align: center;
+}
+.main-content .tag-text-div .tag-text-cross-div{
+  background: #cdcdd3;
+  color: #fff;
+  width:15px;
+  height:15px;
+  margin:-25px 0 0 100%;
+  padding:10px;
+  border-radius:50%;
+}
+.main-content .tag-text-div .tag-text-cross-div p{
+  margin: -13px 0 0 -4px;
+  font-size:15px;
+}
+.main-content .tag-text-div .tag-text-cross-div:hover{
+  background: red;
+  cursor: pointer;
+}
