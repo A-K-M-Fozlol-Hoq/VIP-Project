@@ -173,7 +173,7 @@
                 <div style="cursor:pointer;" onclick="location.href = '/'">X</div>
               </div>
               <div class="chat-box">
-                <div class="messages">
+                <div class="messages" id="messages">
                     <div  class="message" >
                       <span class="message-text">This is a message</span>
                     </div>
@@ -181,7 +181,7 @@
                       <span class="message-text">This is a message</span>
                     </div>
                 </div>
-                <input class="form-control" type="text" placeholder="message" onKeyDown={sendMessage} />
+                <input class="form-control" type="text" placeholder="message" id="send-text" />
               </div>
             </div>
           </div>
