@@ -170,7 +170,7 @@
 
 /* main content */
 .chat {
-	width: 500px;
+	width: 800px;
   margin:auto;
   margin-top: 100px;
 	display: flex;
@@ -181,7 +181,7 @@
 }
 
 .user-list {
-	width: 100px;
+	width: 150px;
 	border-right: 2px solid dodgerblue;
   height: 480px;
   overflow-y: scroll;
