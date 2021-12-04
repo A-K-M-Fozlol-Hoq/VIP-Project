@@ -74,62 +74,85 @@ if(sortedEvents.length > 0){
 }
 const showEventsClass = document.createElement('class')
 showEventsClass.classList.add('show-events')
+showEvents.appendChild(showEventsClass)
 {
-    events.map((eventsOnTHisDay, index)=>{
-        const div1 = document.createElement('div') 
+    events.map((eventsOnTHisDay)=>{
+        const div1 = document.createElement('div');
         showEventsClass.appendChild(div1);
+        eventsOnTHisDay.map((singleEvent, index)=>{
+            const div2 = document.createElement('div') 
+            div1.appendChild(div2);
+            if(index === 0) {
+                const ifDiv3 = document.createElement('div')
+                div2.appendChild(ifDiv3);
+                ifDiv3.style.margin='20px 0 -5px 0';
+                ifDiv3.innerHTML = `
+                <p>${days[(new Date(singleEvent[0])).getDay()]}, ${(new Date(singleEvent[0])).getDate()} 
+                ${' '}${months[(new Date(singleEvent[0])).getMonth()]} ${singleEvent[0]. slice(0, 4)}</p>
+                `;
+            }
+            else{
+                const singleEventClass = document.createElement('div');
+                singleEventClass.classList.add('single-event');
+                div2.appendChild(singleEventClass);
+                // This class is to design of colorful side div
+                const sideColor = document.createElement('div');
+                sideColor.classList.add('side-color');
+                sideColor.style.background = singleEvent[0].color;
+                singleEventClass.appendChild(sideColor);
+                // creatng event class
+                const eventClass = document.createElement('div');
+                eventClass.classList.add('event-class');
+                singleEventClass.appendChild(eventClass);
+                // This image to show image dynamically
+                // if(singleEvent[0].type === 'viewing'){
+                //     eventClass.appendChild(document.createElement('div').innerHTML(
+                //         `<img src="https://portfolio-fozlol.web.app/static/media/2.9924e2a1.png" alt="" />`
+                //     ))
+                // }
+            }
+        })
     }
     )
 }
-showEvents.appendChild(showEventsClass)
+// showEvents.appendChild(showEventsClassingleEvent[0].type === 'viewing's)
 
 
-                    // {
-                    //     eventsOnTHisDay.map((singleEvent, index)=>
-                    //     <div key ={index}>
-                    //         {
-                    //             index ===0?
-                    //             <div style={{margin:'20px 0 -5px 0'}}>
-                    //                 <p>{days[(new Date(singleEvent[0])).getDay()]}, {(new Date(singleEvent[0])).getDate()} 
-                    //                 {' '}{months[(new Date(singleEvent[0])).getMonth()]} {singleEvent[0]. slice(0, 4)}</p>
-                    //             </div>
-                    //             :
-                    //             <div className='single-event' onClick={()=>{handleClick(singleEvent)}}>
-                    //                 <div className='side-color' style={{backgroundColor:`${singleEvent[0].color}`}}></div>
-                    //                 <div className="event">
-                    //                 {
-                    //                     singleEvent[0].type === 'viewing'?
-                    //                     <img src={viewing} alt="" />
-                    //                     :
-                    //                     singleEvent[0].type === 'contract'?
-                    //                     <img src={contract} alt="" />
-                    //                     :
-                    //                     singleEvent[0].type === 'maintenance'?
-                    //                     <img src={maintenance} alt="" />
-                    //                     :
-                    //                     <img src={maintenance} alt="" />
-                    //                 }
+
+
+
+
+// 
+//                 <div className="event">
+//                 {
+//                     ?
+//                     <img src={viewing} alt="" />
+//                     :
+//                     singleEvent[0].type === 'contract'?
+//                     <img src={contract} alt="" />
+//                     :
+//                     singleEvent[0].type === 'maintenance'?
+//                     <img src={maintenance} alt="" />
+//                     :
+//                     <img src={maintenance} alt="" />
+//                 }
                                         
-                    //                     <div className="description">
-                    //                         <div className="title">
-                    //                             <p style={{marginBottom:'5px', marginTop:'0px'}}>{singleEvent[0].title.slice(0,10)}
-                    //                              {/* {singleEvent[0].title.length > 10 && <p>...</p>} */}
-                    //                              </p>
-                    //                             <div className="img">
-                    //                                 <img src={peopleOne} alt="" />
-                    //                                 <img src={peopleTwo} alt="" />
-                    //                                 <img src={peopleThree} alt="" />
-                    //                             </div>
-                    //                         </div>
-                    //                         <div className="info">
-                    //                             <i>{singleEvent[0].location.slice(0,10)}:{' '} 
-                    //                             {(new Date(singleEvent[0]?.startTime)).toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })} - 
-                    //                             {(new Date(singleEvent[0]?.endTime)).toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })} 
-                    //                             </i>
-                    //                         </div>
-                    //                     </div>
-                    //                 </div>
-                    //             </div>
-                    //         }
-                    //     </div>)
-                    // }
+//                     <div className="description">
+//                         <div className="title">
+//                             <p style={{marginBottom:'5px', marginTop:'0px'}}>{singleEvent[0].title.slice(0,10)}
+//                              {/* {singleEvent[0].title.length > 10 && <p>...</p>} */}
+//                              </p>
+//                             <div className="img">
+//                                 <img src={peopleOne} alt="" />
+//                                 <img src={peopleTwo} alt="" />
+//                             </div>
+//                         </div>
+//                         <div className="info">
+//                             <i>{singleEvent[0].location.slice(0,10)}:{' '} 
+//                             {(new Date(singleEvent[0]?.startTime)).toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })} - 
+//                             {(new Date(singleEvent[0]?.endTime)).toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })} 
+//                             </i>
+//                         </div>
+//                     </div>
+//                 </div>
+// 
