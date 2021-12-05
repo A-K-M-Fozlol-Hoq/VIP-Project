@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- openSansFont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="/AssignATask/assignTaskScript.js"></script>
+    <title>Assign a task</title>
+</head>
+
+<body class="assign-task-wrapper">
+    <!-- navbar -->
+    <section
+        class="navbar container-fluid d-flex justify-content-md-between justify-content-xs-around justify-content-sm-center align-items-center"
+        style="background-color: #232946;">
+        <div class="d-flex justify-content-evenly">
+            <a href="/home/index.html" class="text-decoration-none text-white d-flex align-items-center mx-3"><img
+                    src="/logos/1.PNG" alt="logoImage" style="border-radius: 25%;" height="42" width="45">
+                <span class="fs-3 fw-bold mx-2 d-none d-md-inline d-sm-inline d-lg-inline">CircleUp</span>
+            </a>
+        </div>
+        <div class="d-flex justify-content-evenly pt-1">
+            <ul style="list-style: none;" class="d-flex">
+                <li><a href="/home/index.html" style="font-size: 1.28rem;margin-right: 62px;"
+                        class="text-decoration-none text-white ml-xs-0">
+                        <i class="fas fa-home"></i><span class="d-none d-md-inline d-sm-inline d-lg-inline">
+                            Home</span></a></li>
+                <li><a href="/UserProfile/index.html" style="font-size: 1.28rem;margin-right: 62px;"
+                        class="text-decoration-none text-white">
+                        <i class="fas fa-user"></i> <span class="d-none d-md-inline d-sm-inline d-lg-inline">
+                            Profile</span></a></li>
+                <li><a href="/dashboard/index.html" style="font-size: 1.28rem;margin-right: 62px;"
+                        class="text-decoration-none text-white">
+                        <i class="fas fa-columns"></i> <span class="d-none d-md-inline d-sm-inline d-lg-inline">
+                            Dashboard</span></a></li>
+                <li><a href="/AboutUs/index.html" style="font-size: 1.28rem;margin-right: 62px;"
+                        class="text-decoration-none text-white">
+                        <i class="fas fa-info"></i> <span class="d-none d-md-inline d-sm-inline d-lg-inline"> About
+                            Us</span>
+                    </a></li>
+            </ul>
+        </div>
+        <div class="d-flex justify-content-md-evenly justify-content-xs-center">
+            <ul style="list-style: none;" class="d-flex">
+                <li><a href="/Activities/index.html" style="font-size: 1.28rem;"
+                        class="text-decoration-none text-white">
+                        <i class="far fa-bell" style="color: rgb(241, 190, 80);"></i>
+                    </a></li>
+                <li>
+                    <div class="btn-group mx-md-3 border-none" style="height: 24px;">
+                        <button type="button" style="font-size: 1.28rem;" class="btn dropdown-toggle text-white p-0"
+                            data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                            <p id="username">Mr.A</p>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-start dropdown-menu-lg-start">
+                            <li><a class="dropdown-item text-decoration-none pr-5"><span style="cursor:pointer"
+                                        id="login-logout-btn">Login</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- navbar ends here -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 box1 each-box" style="padding: 0px;">
+                <div class="bid-preview p-2 bg-light text-center">
+                    <img src="/logos/5.PNG" class="d-block w-50 mx-auto rounded shadow" alt="userImg">
+                    <span class="fs-4">John Doe</span>
+                    <p class="text-black rounded mt-4"><i class="fas fa-comment-dots"></i> I can complete the project
+                        within due time</p>
+                    <span style="color: gold;"><i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i> <i class="far fa-star"></i> <i class="far fa-star"></i></span><br>
+                    <a href="/PublicProfile/index.html" target="_blank" rel="noopener noreferrer">Visit Profile</a><br>
+                    <button type="button" class="btn btn-primary w-100 my-2"><i class="fas fa-check"></i> Select
+                        Bid</button>
+                </div>
+                <div class="bids border">
+                    <span class="fs-6">Bids</span>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item list-group-item-action list-group-item-secondary"><img
+                                src="/logos/5.PNG" height="30" width="30" style="border-radius: 23%;" alt="userImg"> An
+                            item</li>
+                        <li class="list-group-item list-group-item-action list-group-item-secondary"><img
+                                src="/logos/8.PNG" height="30" width="30" style="border-radius: 23%;" alt="userImg"> A
+                            second item</li>
+                        <li class="list-group-item list-group-item-action list-group-item-secondary"><img
+                                src="/logos/6.PNG" height="30" width="30" style="border-radius: 23%;" alt="userImg"> A
+                            third item</li>
+                        <li class="list-group-item list-group-item-action list-group-item-secondary"><img
+                                src="/logos/2.PNG" height="30" width="30" style="border-radius: 23%;" alt="userImg"> A
+                            fourth item</li>
+                        <li class="list-group-item list-group-item-action list-group-item-secondary"><img
+                                src="/logos/1.PNG" height="30" width="30" style="border-radius: 23%;" alt="userImg"> And
+                            a fifth one
+                        </li>
+                        <li class="list-group-item list-group-item-action list-group-item-secondary"><img
+                                src="/logos/5.PNG" height="30" width="30" style="border-radius: 23%;" alt="userImg"> And
+                            a fifth one
+                        </li>
+                        <li class="list-group-item list-group-item-action list-group-item-secondary"><img
+                                src="/logos/2.PNG" height="30" width="30" style="border-radius: 23%;" alt="userImg"> And
+                            a fifth one
+                        </li>
+                        <li class="list-group-item list-group-item-action list-group-item-secondary"><img
+                                src="/logos/6.PNG" height="30" width="30" style="border-radius: 23%;" alt="userImg"> And
+                            a fifth one
+                        </li>
+                        <li class="list-group-item list-group-item-action list-group-item-secondary"><img
+                                src="/logos/7.PNG" height="30" width="30" style="border-radius: 23%;" alt="userImg"> And
+                            a fifth one
+                        </li>
+                        <li class="list-group-item list-group-item-action list-group-item-secondary"><img
+                                src="/logos/9.PNG" height="30" width="30" style="border-radius: 23%;" alt="userImg"> And
+                            a fifth one
+                        </li>
+                        <li class="list-group-item list-group-item-action list-group-item-secondary"><img
+                                src="/logos/10.PNG" height="30" width="30" style="border-radius: 23%;" alt="userImg">
+                            And
+                            a fifth one
+                        </li>
+                        <li class="list-group-item list-group-item-action list-group-item-secondary"><img
+                                src="/logos/3.PNG" height="30" width="30" style="border-radius: 23%;" alt="userImg"> And
+                            a fifth one
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-8 box2 each-box border">
+                <div class="job-details my-3">
+                    <h3>Web developer for a large scale project.</h3>
+                    <p>An intermediate application with REST API.</p>
+                    <p class="text-primary">Job Description</p>
+                    <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+                        perspiciatis neque voluptatibus suscipit reiciendis culpa deserunt ea ipsum, ipsam beatae earum
+                        molestiae fuga saepe temporibus quos, sapiente ut itaque consequatur?
+                        Nisi, assumenda illum eaque ut expedita libero nostrum soluta iusto temporibus tempore mollitia
+                        maxime totam tenetur natus perspiciatis eius recusandae, beatae doloribus. Quos alias ducimus ea
+                        corporis, quis asperiores veritatis.
+                        Nam, non? Eius omnis error obcaecati aspernatur nulla consequuntur veritatis inventore maiores
+                        earum unde doloremque natus voluptatum, illum ea officia? Voluptas minima numquam facilis at
+                        rerum aspernatur, aperiam ipsa iste!</p>
+                </div>
+                <div class="confirmation">
+                    <h4 class="mb-4 border-bottom">Finalization</h4>
+                    <div class="row">
+                        <div class="col-md-6 text-start">
+                            <h5>John Doe</h5>
+                            <span style="color: gold;"><i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i> <i class="far fa-star"></i> <i
+                                    class="far fa-star"></i></span>
+                        </div>
+                        <div class="col-md-6 text-md-end">
+                            <h5>Delivery on</h5>
+                            <span class="fs-5 fw-normal" id="setDeadline"></span>
+                        </div>
+                    </div>
+                    <button type="button" disabled id="confirm-button" class="btn btn-success w-100 my-3"><i
+                            class="fas fa-handshake"></i> Confirm
+                        Deal $<span id="setPrice"></span></button>
+                </div>
+            </div>
+            <div class="col-md-2 box3 each-box bg-light text-black">
+                <h5>Choose a deadline</h5>
+                <input type="date" name="deadline" id="deadline" onchange="getDeadline()" class="form-control">
+                <br><br>
+                <h5>Price</h5>
+                <input type="number" placeholder="$" value=550 disabled class="form-control" name="price" id="price"
+                    min="50" max="4500"><br><br>
+                <h5>Skills</h5>
+                <div class="d-flex align-items-center justify-content-start">
+                    <img src="/UserProfile/htmlLogo.png" alt="" width="32" height="32" class="mx-2">
+                    <img src="/UserProfile/cssLogo.png" alt="" width="32" height="32" class="mx-2">
+                    <img src="/UserProfile/bootstrapLogo.png" alt="" width="32" height="32" class="mx-2">
+                    <img src="/UserProfile/jsLogo.png" alt="" width="32" height="32" class="mx-2">
+                    <img src="/UserProfile/dynamoLogo.png" alt="" width="32" height="32" class="mx-2">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

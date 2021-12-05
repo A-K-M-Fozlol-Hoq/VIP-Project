@@ -66,7 +66,7 @@ loginBtnID.addEventListener('click', (e)=>{
         alert('Please enter password first!')
     }
     if(loginObject.email && loginObject.password){
-        if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(signupObject.email)){
+        if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(loginObject.email)){
             if(loginObject.password.trim().length>5){
                 let isLoginSuccess = false;
                 isLoginSuccess = true;
@@ -80,11 +80,11 @@ loginBtnID.addEventListener('click', (e)=>{
                 }
             }
             else{
-                alert('email or password is not matching');
+                alert('email or password is not matching 2');
             }
         }
         else{
-            alert('email or password is not matching');
+            alert('email or password is not matching 1');
         }
     }
 })

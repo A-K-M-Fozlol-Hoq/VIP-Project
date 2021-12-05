@@ -10,17 +10,32 @@
 }
 
 /* activities */
-.activities-wrapper .activities{
-    width: 70%;
-    margin: auto;
-    padding: 12px;
+.activities-wrapper .activities {
+  width: 70%;
+  margin: auto;
+  padding: 12px;
 }
-.activities-wrapper .activity-item{
-    width: 100%;
-    padding: 8px;
-    border-radius: 12px;
-    background-color: rgb(233, 243, 247);
+.activities-wrapper .activity-item {
+  position: relative;
+  width: 100%;
+  padding: 8px;
+  border-radius: 12px;
+  background-color: rgb(233, 243, 247);
+  transition: .25s;
 }
-.activities-wrapper .activity-item:hover{
-    box-shadow: 2px 12px 8px #d5d5d680;;
+.activities-wrapper .activity-item:hover {
+  box-shadow: 4px 8px 12px #ececec81;
+}
+.activities-wrapper .cross-button {
+  position: absolute;
+  opacity: 12%;
+  right: 0.9%;
+  top: 5%;
+  transition: transform .25s;
+}
+.activities-wrapper .cross-button:hover{
+  opacity: 75%;
+  color: rgb(243, 114, 114);
+  cursor: pointer;
+  transform: rotate(-90deg);
 }
