@@ -204,7 +204,7 @@
   display: grid;
   grid-template-columns: 40px 1fr;
 }
-.show-events .single-event img{
+.show-events .single-event .img-div img{
   width:40px;
   height:40px;
   margin:10px 5px;
