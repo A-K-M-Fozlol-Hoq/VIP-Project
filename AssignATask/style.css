@@ -1,0 +1,62 @@
+.assign-task-wrapper{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #dde1eeee;
+}
+
+.assign-task-wrapper .each-box{
+    height: 100vh;
+    padding: 12px;
+}
+.assign-task-wrapper .box1 li{
+    cursor: pointer;
+}
+.assign-task-wrapper .bid-preview{
+    height: 40%;
+    overflow-y: scroll;
+}  
+.assign-task-wrapper .bids{
+    height: 60%;
+    overflow-y: scroll;
+}
+.assign-task-wrapper .job-details{
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(255, 255, 255, 0.877);
+    padding: 32px;
+}
+.assign-task-wrapper .box2{
+    overflow-y: scroll;
+}
+.assign-task-wrapper .confirmation{
+    border: 2px dashed grey;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(247, 240, 226);
+    padding: 32px;
+}
+
+
+
+/* scrollBar */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(189, 189, 189); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #e4e2e2; 
+  }
