@@ -1,0 +1,53 @@
+body{
+background-color: silver;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+
+h1{
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    text-decoration: underline;
+}
+h4{ 
+    text-align: center;
+    margin: 25px;
+    padding: 25px;
+}
+
+.hc-left{
+    color: white;
+    border-radius: 20px;
+    padding: 40px;
+    margin: 25px;
+    height: 170px;
+    font-size: 20px;
+    text-align: center;
+    
+}
+
+.hc-center{
+    color: white;
+    border-radius: 20px;
+    padding: 40px;
+    margin: 25px;
+    height: 170px;
+    font-size: 20px;
+    text-align: center;
+    
+}
+
+.hc-right{
+    color: white;
+    border-radius: 20px;
+    padding: 40px;
+    margin: 25px;
+    height: 170px;
+    font-size: 20px;
+    text-align: center;
+    
+}
