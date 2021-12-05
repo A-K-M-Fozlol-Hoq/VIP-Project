@@ -129,7 +129,7 @@ showEvents.appendChild(showEventsClass)
                 // This image to show image dynamically
                 if(singleEvent[0].type === 'shortMeeting'){
                     const imgDiv = document.createElement('div');
-                    imgDiv.style.background='#fff';
+                    imgDiv.style.background='#CCFFCC';
                     imgDiv.style.padding='0 55px 0 0';
                     imgDiv.style.borderRadius='5px';
                     imgDiv.classList.add('img-div')
@@ -138,7 +138,7 @@ showEvents.appendChild(showEventsClass)
                 }
                 else if(singleEvent[0].type === 'longMeeting'){
                     const imgDiv = document.createElement('div');
-                    imgDiv.style.background='#fff';
+                    imgDiv.style.background='#CCFFCC';
                     imgDiv.style.padding='0 55px 0 0';
                     imgDiv.style.borderRadius='5px';
                     imgDiv.classList.add('img-div')
@@ -147,7 +147,7 @@ showEvents.appendChild(showEventsClass)
                 }
                 else  {
                     const imgDiv = document.createElement('div');
-                    imgDiv.style.background='#fff';
+                    imgDiv.style.background='#CCFFCC';
                     imgDiv.style.padding='0 55px 0 0';
                     imgDiv.style.borderRadius='5px';
                     imgDiv.classList.add('img-div')
@@ -156,18 +156,18 @@ showEvents.appendChild(showEventsClass)
                 }
                 const descriptionClass = document.createElement('div');
                 descriptionClass.classList.add('description');
-                singleEventClass.appendChild(descriptionClass);
+                eventClass.appendChild(descriptionClass);
                 descriptionClass.innerHTML=
                 `
-                <div className="title">
+                <div class="title">
                     <p style="margin-bottom:5px; margin-top:0px;">${singleEvent[0].title.slice(0,10)}
                      </p>
-                    <div className="img">
+                    <div class="img">
                         <img src="./images/blackWatch.PNG" alt="" />
                         <img src="./images/colorWatch.PNG" alt="" />
                     </div>
                 </div>
-                <div className="info">
+                <div class="info" style="color:#fff">
                     <i>${singleEvent[0].location.slice(0,10)}:
                     ${(new Date(singleEvent[0]?.startTime)).toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })} - 
                     ${(new Date(singleEvent[0]?.endTime)).toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })} 

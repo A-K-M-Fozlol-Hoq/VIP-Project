@@ -182,7 +182,6 @@
 .show-events .content{
   overflow-y: scroll;
 }
-
 .show-events .single-event{
   display: grid; 
   grid-template-columns: 10px 1fr;
@@ -202,28 +201,29 @@
   border-bottom-right-radius: 10px;
   padding: 2px;
   display: grid;
-  grid-template-columns: 40px 1fr;
+  grid-template-columns: 60px 1fr;
+  grid-gap: 10px;
 }
 .show-events .single-event .img-div img{
   width:40px;
   height:40px;
   margin:10px 5px;
 }
-.show-events .single-event .event .title {
+.show-events .single-event .description {
+  margin-top:5;
+}
+.show-events .single-event .description .title{
+  font-size:18px;
   display: grid;
   grid-template-columns: 80% 1fr;
-}
-.show-events .single-event .event .description {
+  color:#fff;
   margin-top:5px;
 }
-.show-events .single-event .event .description .title{
-  font-size:18px;
-}
-.show-events .single-event .event .description .info{
+.show-events .single-event .description .info{
   font-size:12px;
   margin-top:-8px;
 }
-.show-events .single-event .event .description .title img{
+.show-events .single-event .description .title img{
   width: 15px;
   height: 15px;
   border-radius: 50%;
