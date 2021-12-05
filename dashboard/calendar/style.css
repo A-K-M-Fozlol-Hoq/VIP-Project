@@ -169,10 +169,14 @@
 
 /* main content */
 
-.show-events{
-  height: 380px;
-  overflow: scroll;
-  margin:10px;
+#show-events{
+  height: 520px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin:50px auto 0;
+  background-color: #6C757D;
+  width: 600px;
+  border-radius:10px;
 }
 
 .show-events .content{

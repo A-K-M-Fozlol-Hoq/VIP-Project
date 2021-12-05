@@ -43,6 +43,28 @@ let events = [
       description: "t6ygik",
       color: "#7433FF",
     },
+    {
+      _id: "613701951353fcf5e5cc108a",
+      type: "shortMeeting",
+      title: "nninee",
+      location: "nnine",
+      people: "nnine",
+      startTime: "2021-09-19T12:06",
+      endTime: "2021-09-20T12:07",
+      description: "nninennine nninennine",
+      color: "#2A9D8F",
+    },
+    {
+      _id: "613701951353fcf5e5cc108a",
+      type: "shortMeeting",
+      title: "nninee",
+      location: "nnine",
+      people: "nnine",
+      startTime: "2021-09-19T12:06",
+      endTime: "2021-09-20T12:07",
+      description: "nninennine nninennine",
+      color: "#2A9D8F",
+    },
   ]
 const showEvents = document.getElementById("show-events");
 events.sort((event1, event2) =>new Date(event2.startTime) - new Date(event1.startTime))
@@ -87,7 +109,7 @@ showEvents.appendChild(showEventsClass)
                 div2.appendChild(ifDiv3);
                 ifDiv3.style.margin='20px 0 -5px 0';
                 ifDiv3.innerHTML = `
-                <p style="text-align:center;">${days[(new Date(singleEvent[0])).getDay()]}, ${(new Date(singleEvent[0])).getDate()} 
+                <p style="text-align:center;color:#fff;">${days[(new Date(singleEvent[0])).getDay()]}, ${(new Date(singleEvent[0])).getDate()} 
                 ${' '}${months[(new Date(singleEvent[0])).getMonth()]} ${singleEvent[0]. slice(0, 4)}</p>
                 `;
             }
@@ -107,17 +129,26 @@ showEvents.appendChild(showEventsClass)
                 // This image to show image dynamically
                 if(singleEvent[0].type === 'shortMeeting'){
                     const imgDiv = document.createElement('div');
-                    imgDiv.innerHTML =`<img src="./images/colorWatch.PNG" alt="" />`;
+                    imgDiv.style.background='#fff';
+                    imgDiv.style.padding='0 55px 0 0';
+                    imgDiv.style.borderRadius='5px';
+                    imgDiv.innerHTML =`<img src="./images/short.png" alt="" />`;
                     eventClass.appendChild(imgDiv)
                 }
                 else if(singleEvent[0].type === 'longMeeting'){
                     const imgDiv = document.createElement('div');
-                    imgDiv.innerHTML =`<img src="./images/blackWatch.PNG" alt="" />`;
+                    imgDiv.style.background='#fff';
+                    imgDiv.style.padding='0 55px 0 0';
+                    imgDiv.style.borderRadius='5px';
+                    imgDiv.innerHTML =`<img src="./images/long.png" alt="" />`;
                     eventClass.appendChild(imgDiv)
                 }
                 else  {
                     const imgDiv = document.createElement('div');
-                    imgDiv.innerHTML =`<img src="./images/unp.jfif" alt="" />`;
+                    imgDiv.style.background='#fff';
+                    imgDiv.style.padding='0 55px 0 0';
+                    imgDiv.style.borderRadius='5px';
+                    imgDiv.innerHTML =`<img src="./images/unp.png" alt="" />`;
                     eventClass.appendChild(imgDiv)
                 }
                 
