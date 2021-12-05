@@ -1,7 +1,7 @@
 var allEvents = [
     {
       _id: "613701951353fcf5e5cc108a",
-      type: "viewing",
+      type: "shortMeeting",
       title: "nninee",
       location: "nnine",
       people: "nnine",
@@ -12,7 +12,7 @@ var allEvents = [
     },
     {
       _id: "613701951353fcf5e5cc108a",
-      type: "contract",
+      type: "longMeeting",
       title: "nnine",
       location: "nnine",
       people: "nnine",
@@ -23,7 +23,7 @@ var allEvents = [
     },
     {
       _id: "613701ac1353fcf5e5cc108b",
-      type: "maintenance",
+      type: "Unp",
       title: "ten",
       location: "ten",
       people: "ten",
@@ -34,7 +34,7 @@ var allEvents = [
     },
     {
       _id: "61399cd3a2113b5cf4485a8a",
-      type: "others",
+      type: "shortMeeting",
       title: "demo tit",
       location: "fivetwo",
       people: "demo pep",

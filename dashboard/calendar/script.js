@@ -1,7 +1,7 @@
 let events = [
     {
       _id: "613701951353fcf5e5cc108a",
-      type: "viewing",
+      type: "shortMeeting",
       title: "nninee",
       location: "nnine",
       people: "nnine",
@@ -12,7 +12,7 @@ let events = [
     },
     {
       _id: "613701951353fcf5e5cc108a",
-      type: "contract",
+      type: "longMeeting",
       title: "nnine",
       location: "nnine",
       people: "nnine",
@@ -23,7 +23,7 @@ let events = [
     },
     {
       _id: "613701ac1353fcf5e5cc108b",
-      type: "maintenance",
+      type: "Unp",
       title: "ten",
       location: "ten",
       people: "ten",
@@ -34,7 +34,7 @@ let events = [
     },
     {
       _id: "61399cd3a2113b5cf4485a8a",
-      type: "others",
+      type: "shortMeeting",
       title: "demo tit",
       location: "fivetwo",
       people: "demo pep",
@@ -43,7 +43,7 @@ let events = [
       description: "t6ygik",
       color: "#7433FF",
     },
-];
+  ]
 const showEvents = document.getElementById("show-events");
 events.sort((event1, event2) =>new Date(event2.startTime) - new Date(event1.startTime))
 let sortedEvents = events;
@@ -87,7 +87,7 @@ showEvents.appendChild(showEventsClass)
                 div2.appendChild(ifDiv3);
                 ifDiv3.style.margin='20px 0 -5px 0';
                 ifDiv3.innerHTML = `
-                <p>${days[(new Date(singleEvent[0])).getDay()]}, ${(new Date(singleEvent[0])).getDate()} 
+                <p style="text-align:center;">${days[(new Date(singleEvent[0])).getDay()]}, ${(new Date(singleEvent[0])).getDate()} 
                 ${' '}${months[(new Date(singleEvent[0])).getMonth()]} ${singleEvent[0]. slice(0, 4)}</p>
                 `;
             }
@@ -102,14 +102,25 @@ showEvents.appendChild(showEventsClass)
                 singleEventClass.appendChild(sideColor);
                 // creatng event class
                 const eventClass = document.createElement('div');
-                eventClass.classList.add('event-class');
+                eventClass.classList.add('event');
                 singleEventClass.appendChild(eventClass);
                 // This image to show image dynamically
-                // if(singleEvent[0].type === 'viewing'){
-                //     eventClass.appendChild(document.createElement('div').innerHTML(
-                //         `<img src="https://portfolio-fozlol.web.app/static/media/2.9924e2a1.png" alt="" />`
-                //     ))
-                // }
+                if(singleEvent[0].type === 'shortMeeting'){
+                    const imgDiv = document.createElement('div');
+                    imgDiv.innerHTML =`<img src="./images/colorWatch.PNG" alt="" />`;
+                    eventClass.appendChild(imgDiv)
+                }
+                else if(singleEvent[0].type === 'longMeeting'){
+                    const imgDiv = document.createElement('div');
+                    imgDiv.innerHTML =`<img src="./images/blackWatch.PNG" alt="" />`;
+                    eventClass.appendChild(imgDiv)
+                }
+                else  {
+                    const imgDiv = document.createElement('div');
+                    imgDiv.innerHTML =`<img src="./images/unp.jfif" alt="" />`;
+                    eventClass.appendChild(imgDiv)
+                }
+                
             }
         })
     }

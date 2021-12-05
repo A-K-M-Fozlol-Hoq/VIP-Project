@@ -185,6 +185,8 @@
   height: 60px;
   margin-bottom: 15px;
   cursor: pointer;
+  width: 300px;
+  margin:10px auto;
 }
 .show-events .single-event .side-color{
   border-top-left-radius: 10px;
@@ -198,9 +200,10 @@
   display: grid;
   grid-template-columns: 40px 1fr;
 }
-.show-events .single-event .event img{
-  width:100%;
-  margin: auto;
+.show-events .single-event img{
+  width:40px;
+  height:40px;
+  margin:10px 5px;
 }
 .show-events .single-event .event .title {
   display: grid;
