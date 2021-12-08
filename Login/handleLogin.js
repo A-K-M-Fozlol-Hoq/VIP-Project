@@ -74,6 +74,7 @@ loginBtnID.addEventListener('click', (e)=>{
                     alert('logged in successfully');
                     localStorage.setItem('loggedInEmail', loginObject.email);
                     // localStorage.getItem('loggedInEmail')
+                    location.href = '/';
                 }
                 else{
                     alert('login failed');
@@ -136,6 +137,7 @@ createAccountBtnID.addEventListener('click', (e)=>{
                         alert('signed up successfully');
                         localStorage.setItem('loggedInEmail', signupObject.email);
                     // localStorage.getItem('loggedInEmail')
+                    location.href = '/';
                     }
                     else{
                         alert('signed failed');
