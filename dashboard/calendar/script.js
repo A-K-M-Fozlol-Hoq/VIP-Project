@@ -65,6 +65,17 @@ let events = [
       description: "nninennine nninennine",
       color: "#2A9D8F",
     },
+    {
+      _id: "613701951353fcf5e5cc108a",
+      type: "shortMeeting",
+      title: "fozlol",
+      location: "fozlol",
+      people: "fozlol",
+      startTime: "2022-08-19T12:06",
+      endTime: "2021-09-20T12:07",
+      description: "nninennine nninennine",
+      color: "#2A9D8F",
+    },
   ]
 const showEvents = document.getElementById("show-events");
 events.sort((event1, event2) =>new Date(event2.startTime) - new Date(event1.startTime))

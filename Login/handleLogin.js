@@ -11,6 +11,7 @@ const loginObject ={
 const signupObject ={
     firstName:'',
     lastName:' ',
+    role:'user',
     email:'',
     password:'',
     confirmPassword:'',
@@ -136,8 +137,25 @@ createAccountBtnID.addEventListener('click', (e)=>{
                     if(isSignupSuccess){
                         alert('signed up successfully');
                         localStorage.setItem('loggedInEmail', signupObject.email);
-                    // localStorage.getItem('loggedInEmail')
-                    location.href = '/';
+                        location.href = '/';
+                        // fetch("http://localhost/circleUp/APIs/user/adduser.php", {
+                        //     method: "POST",
+                        //     headers: { "content-type": "application/json" },
+                        //     body: JSON.stringify({
+                        //     firstName: signupObject.firstName,
+                        //     lastName: signupObject.lastName,
+                        //     email: signupObject.email,
+                        //     role: signupObject.email.role,
+                        //     __password: signupObject.password,
+                        //     }),
+                        // })
+                        //     .then((response) => response.json())
+                        //     .then((data) => {
+                        //     console.log(data, 'from backend');
+                        //     })
+                        //     .catch((error) => {
+                        //     console.error(error, 'error, fozlollll');
+                        //     });
                     }
                     else{
                         alert('signed failed');
